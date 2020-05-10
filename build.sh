@@ -1,4 +1,4 @@
 #! /bin/bash
 
-dotnet msbuild
+sudo dotnet msbuild
 echo "Building .Net App.."
