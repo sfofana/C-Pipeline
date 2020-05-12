@@ -19,17 +19,19 @@ namespace AwsImgRekCSharp.Utilities
         }
         public string setFile(string fileName)
         {
-            Console.WriteLine(settings.Value.getPath());
-            if (!Directory.Exists(settings.Value.getPath()))
+            string path = Path.Combine(settings.Value.directory, settings.Value.folder);
+            Console.WriteLine(path);
+            if (!Directory.Exists(path))
             {
-                Directory.CreateDirectory(settings.Value.getPath());
+                Directory.CreateDirectory(path);
             }
-            string SaveAs = Path.Combine(settings.Value.getPath(), fileName + settings.Value.extention);
+            string SaveAs = Path.Combine(path, fileName + settings.Value.extention);
             return SaveAs;
         }
         public MultipartFormDataContent getFormData(string fileName)
         {
-            string file = Path.Combine(settings.Value.getPath(), fileName + settings.Value.extention);
+            string path = Path.Combine(settings.Value.directory, settings.Value.folder);
+            string file = Path.Combine(path, fileName + settings.Value.extention);
             byte[] data = File.ReadAllBytes(file);
 
             MultipartFormDataContent form = new MultipartFormDataContent();
