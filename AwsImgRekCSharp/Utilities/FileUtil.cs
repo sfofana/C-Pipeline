@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AwsImgRekCSharp.Configurations;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,30 +12,32 @@ namespace AwsImgRekCSharp.Utilities
 {
     public class FileUtil
     {
-        private static string dir = "/home/ec2-user";
-        private string path = Path.Combine(dir, "temp");
-        private string extn = ".jpg";
+        private readonly IOptions<Settings> settings;
+        public FileUtil(IOptions<Settings> iSettings)
+        {
+            settings = iSettings;
+        }
         public string setFile(string fileName)
         {
-            Console.WriteLine(path);
-            if (!Directory.Exists(path))
+            Console.WriteLine(settings.Value.getPath());
+            if (!Directory.Exists(settings.Value.getPath()))
             {
-                Directory.CreateDirectory(path);
+                Directory.CreateDirectory(settings.Value.getPath());
             }
-            string SaveAs = Path.Combine(path, fileName + extn);
+            string SaveAs = Path.Combine(settings.Value.getPath(), fileName + settings.Value.extention);
             return SaveAs;
         }
         public MultipartFormDataContent getFormData(string fileName)
         {
-            string file = Path.Combine(path, fileName + extn);
+            string file = Path.Combine(settings.Value.getPath(), fileName + settings.Value.extention);
             byte[] data = File.ReadAllBytes(file);
 
             MultipartFormDataContent form = new MultipartFormDataContent();
             HttpContent content = new ByteArrayContent(data);
-            content.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
+            content.Headers.ContentDisposition = new ContentDispositionHeaderValue(settings.Value.formvalue)
             {
-                Name = "file",
-                FileName = fileName + extn
+                Name = settings.Value.formtype,
+                FileName = fileName + settings.Value.extention
             };
             form.Add(content);
             return form;

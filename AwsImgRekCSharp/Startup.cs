@@ -28,6 +28,7 @@ namespace AwsImgRekCSharp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<Settings>(Configuration.GetSection("Settings"));
             services.AddAuthentication("Basic-Auth")
                 .AddScheme<AuthenticationSchemeOptions, BasicAuthHandler>("Basic-Auth", null);
             services.AddControllers();

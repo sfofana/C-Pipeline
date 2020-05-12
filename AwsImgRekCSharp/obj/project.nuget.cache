@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZGnGliHtLUceW84ofvoDWhk2FOirkcd0Do9yq8+VY1YppWRHrpAloSThdS9IiYorKKCgUyKduyeqdaPc6Ykffg==",
+  "dgSpecHash": "pMpZOrU+SYTmIuYKthGrDMpGpNWrMXGhfduu37B9pKXlHxjv+ygTw+aM+jRNX+GGvygAmkFOhGDpgrtM701Rsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sufya\\Documents\\Repository\\ImgRecApp\\C#\\AwsImgRekCSharp\\AwsImgRekCSharp\\AwsImgRekCSharp.csproj",
+  "projectFilePath": "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\AwsImgRekCSharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sufya\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\sufya\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -6135,11 +6135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sufya\\Documents\\Repository\\ImgRecApp\\C#\\AwsImgRekCSharp\\AwsImgRekCSharp\\AwsImgRekCSharp.csproj",
+      "projectUniqueName": "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\AwsImgRekCSharp.csproj",
       "projectName": "AwsImgRekCSharp",
-      "projectPath": "C:\\Users\\sufya\\Documents\\Repository\\ImgRecApp\\C#\\AwsImgRekCSharp\\AwsImgRekCSharp\\AwsImgRekCSharp.csproj",
+      "projectPath": "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\AwsImgRekCSharp.csproj",
       "packagesPath": "C:\\Users\\sufya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sufya\\Documents\\Repository\\ImgRecApp\\C#\\AwsImgRekCSharp\\AwsImgRekCSharp\\obj\\",
+      "outputPath": "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sufya\\AppData\\Roaming\\NuGet\\NuGet.Config",

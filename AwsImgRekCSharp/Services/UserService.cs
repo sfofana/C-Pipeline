@@ -1,6 +1,7 @@
 ﻿using AwsImgRekCSharp.Configurations;
 using AwsImgRekCSharp.Models;
 using AwsImgRekCSharp.Utilities;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,18 +15,18 @@ namespace AwsImgRekCSharp.Services
 {
     public class UserService : IUserService
     {
-        private string comUrl = "http://ec2-3-17-26-55.us-east-2.compute.amazonaws.com:9000/api/v1/compare";
-        private string upUrl = "http://ec2-3-17-26-55.us-east-2.compute.amazonaws.com:9000/api/v1/upload/";
+        private readonly IOptions<Settings> settings;
         private readonly HttpClientBuilder client;
         private readonly FileUtil fileUtil;
-        public UserService(HttpClientBuilder clientDpnd, FileUtil fileUtilDpnd)
+        public UserService(IOptions<Settings> iSettings, HttpClientBuilder iClient, FileUtil iFileUtil)
         {
-            client = clientDpnd;
-            fileUtil = fileUtilDpnd;
+            settings = iSettings;
+            client = iClient;
+            fileUtil = iFileUtil;
         }
         public async Task<Compare> CompareFacesResults(Compare faces)
         {
-            HttpResponseMessage response = await client.http().PostAsJsonAsync(comUrl, faces);
+            HttpResponseMessage response = await client.http().PostAsJsonAsync(settings.Value.compareUrl, faces);
             faces = await response.Content.ReadAsAsync<Compare>();
             return faces;
         }
@@ -33,7 +34,7 @@ namespace AwsImgRekCSharp.Services
         {
             MultipartFormDataContent form = fileUtil.getFormData(fileName);
 
-            HttpResponseMessage response = await client.http().PostAsync(upUrl + fileName, form);
+            HttpResponseMessage response = await client.http().PostAsync(settings.Value.uploadUrl + fileName, form);
             Upload process = await response.Content.ReadAsAsync<Upload>();
             return process;
         }

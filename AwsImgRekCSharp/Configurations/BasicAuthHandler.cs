@@ -14,19 +14,19 @@ namespace AwsImgRekCSharp.Configurations
 {
     public class BasicAuthHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
-        string username = "sfofana";
-        string password = "UofH2011";
-        string user;
-        string pass;
+        string username;
+        string password;
+        private readonly IOptions<Settings> settings;
         public BasicAuthHandler(
             IOptionsMonitor<AuthenticationSchemeOptions> options,
+            IOptions<Settings> iSettings,
             ILoggerFactory logger,
             UrlEncoder encoder,
             ISystemClock clock
             )
             : base(options, logger, encoder, clock)
         {
-
+            settings = iSettings;
         }
         protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
         {
@@ -38,14 +38,14 @@ namespace AwsImgRekCSharp.Configurations
                 var authHeader = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
                 var credentialBytes = Convert.FromBase64String(authHeader.Parameter);
                 string[] credentials = Encoding.UTF8.GetString(credentialBytes).Split(":");
-                user = credentials[0];
-                pass = credentials[1];
+                username = credentials[0];
+                password = credentials[1];
 
-                if (user != this.username || pass != this.password)
+                if (username != settings.Value.username || password != settings.Value.password)
                     return AuthenticateResult.Fail("Invalid Credentials");
                 else
                 {
-                    var claims = new[] { new Claim(ClaimTypes.Name, user) };
+                    var claims = new[] { new Claim(ClaimTypes.Name, username) };
                     var identity = new ClaimsIdentity(claims, Scheme.Name);
                     var principal = new ClaimsPrincipal(identity);
                     var ticket = new AuthenticationTicket(principal, Scheme.Name);

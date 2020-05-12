@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -10,14 +11,17 @@ namespace AwsImgRekCSharp.Configurations
 {
     public class HttpClientBuilder
     {
-        private string username = "sfofana";
-        private string password = "UofH2011";
+        private readonly IOptions<Settings> settings;
+        public HttpClientBuilder(IOptions<Settings> iSettings)
+        {
+            settings = iSettings;
+        }
         public HttpClient http()
         {
             HttpClient client = new HttpClient();
             AuthenticationHeaderValue authValue = 
                 new AuthenticationHeaderValue("Basic", Convert.ToBase64String(
-                    Encoding.UTF8.GetBytes($"{username}:{password}")
+                    Encoding.UTF8.GetBytes($"{settings.Value.username}:{settings.Value.password}")
                     ));
             client.DefaultRequestHeaders.Authorization = authValue;
             return client;
