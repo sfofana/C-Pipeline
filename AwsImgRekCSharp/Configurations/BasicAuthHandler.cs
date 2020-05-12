@@ -41,7 +41,7 @@ namespace AwsImgRekCSharp.Configurations
                 username = credentials[0];
                 password = credentials[1];
 
-                if (username != "sfofana" || password != "UofH2011")
+                if (username != settings.Value.username || password != settings.Value.password)
                     return AuthenticateResult.Fail("Invalid Credentials");
                 else
                 {

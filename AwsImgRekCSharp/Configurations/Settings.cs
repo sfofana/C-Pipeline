@@ -17,6 +17,9 @@ namespace AwsImgRekCSharp.Configurations
         public string extention { get; set; }
         public string formvalue { get; set; }
         public string formtype { get; set; }
-        
+        public string getPath()
+        {
+            return Path.Combine(directory, folder);
+        }
     }
 }
