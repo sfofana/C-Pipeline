@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AwsImgRekCSharp.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/v1")]
     [ApiController]
     public class UserController : ControllerBase
