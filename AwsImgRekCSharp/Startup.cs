@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using AwsImgRekCSharp.Configurations;
 using AwsImgRekCSharp.Services;
@@ -20,10 +22,10 @@ namespace AwsImgRekCSharp
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
-            //Configuration = new ConfigurationBuilder()
-            //    .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)).AddJsonFile("appsettings.json")
-            //    .Build();
+            //Configuration = configuration;
+            Configuration = new ConfigurationBuilder()
+                .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)).AddJsonFile("appsettings.json")
+                .Build();
         }
 
         public IConfiguration Configuration { get; }
