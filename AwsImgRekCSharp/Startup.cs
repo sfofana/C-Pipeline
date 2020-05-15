@@ -21,6 +21,9 @@ namespace AwsImgRekCSharp
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //Configuration = new ConfigurationBuilder()
+            //    .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)).AddJsonFile("appsettings.json")
+            //    .Build();
         }
 
         public IConfiguration Configuration { get; }

@@ -7,8 +7,9 @@ namespace AwsImgRekCSharp.Models
 {
     public class Compare
     {
-        public string name1 { get; set; }
-        public string name2 { get; set; }
+        public List<string> names { get; set; }
+        public List<string> images { get; set; }
+        public List<string> details { get; set; }
         public double results { get; set; }
     }
 }
