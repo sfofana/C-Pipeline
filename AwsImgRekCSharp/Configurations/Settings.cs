@@ -8,8 +8,10 @@ namespace AwsImgRekCSharp.Configurations
 {
     public class Settings
     {
+        public string secretKey { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+        public string sessionUrl { get; set; }
         public string compareUrl { get; set; }
         public string uploadUrl { get; set; }
         public string directory { get; set; }

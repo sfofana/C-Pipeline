@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using AwsImgRekCSharp.Models;
 using AwsImgRekCSharp.Services;
@@ -13,29 +14,34 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AwsImgRekCSharp.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/v1")]
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly JwtUtil jwtUtil;
         private readonly UserService service;
         private readonly FileUtil fileUtil;
-        public UserController(UserService serviceDpnd, FileUtil fileUtilDpnd)
+        public UserController(
+            JwtUtil iJwtutil,
+            UserService iService, 
+            FileUtil iFileUtil
+            )
         {
-            service = serviceDpnd;
-            fileUtil = fileUtilDpnd;
+            jwtUtil = iJwtutil;
+            service = iService;
+            fileUtil = iFileUtil;
         }
         [HttpGet("compare")]
         public async Task<Compare> CompareFacesGet([FromBody] Compare faces)
         {
-            return await service.CompareFacesResults(faces);
+            return await service.CompareFacesResults(faces, getToken());
         }
 
-        // POST: api/User
         [HttpPost("compare")]
         public async Task<Compare> CompareFaces([FromBody] Compare faces)
-        {
-            return await service.CompareFacesResults(faces);
+        {           
+            return await service.CompareFacesResults(faces, getToken());
         }
 
         [HttpPost("upload/{name}")]
@@ -50,7 +56,13 @@ namespace AwsImgRekCSharp.Controllers
                     file.CopyTo(stream);
                 }
             }
-            return await service.ProcessUpload(name);
+            return await service.ProcessUpload(name, getToken());
+        }
+
+        private string getToken()
+        {
+            var tokenHeader = AuthenticationHeaderValue.Parse(Request.Headers["jToken"]);
+            return tokenHeader.Parameter;
         }
 
     }

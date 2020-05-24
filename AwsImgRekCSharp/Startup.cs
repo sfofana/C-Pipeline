@@ -2,12 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using AwsImgRekCSharp.Configurations;
 using AwsImgRekCSharp.Services;
 using AwsImgRekCSharp.Utilities;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +19,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AwsImgRekCSharp
 {
@@ -22,10 +27,10 @@ namespace AwsImgRekCSharp
     {
         public Startup(IConfiguration configuration)
         {
-            //Configuration = configuration;
-            Configuration = new ConfigurationBuilder()
-                .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)).AddJsonFile("appsettings.json")
-                .Build();
+            Configuration = configuration;
+            //Configuration = new ConfigurationBuilder()
+            //    .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)).AddJsonFile("appsettings.json")
+            //    .Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -34,8 +39,9 @@ namespace AwsImgRekCSharp
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<Settings>(Configuration.GetSection("Settings"));
-            services.AddAuthentication("Basic-Auth")
-                .AddScheme<AuthenticationSchemeOptions, BasicAuthHandler>("Basic-Auth", null);
+            services.AddAuthentication("Rest-Auth")
+                .AddScheme<AuthenticationSchemeOptions, RestAuthHandler>("Rest-Auth", null);
+            services.AddScoped<JwtUtil>();
             services.AddControllers();
             services.AddScoped<HttpClientBuilder>();
             services.AddScoped<UserService>();
