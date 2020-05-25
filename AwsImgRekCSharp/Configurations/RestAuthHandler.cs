@@ -37,7 +37,7 @@ namespace AwsImgRekCSharp.Configurations
             if (!Request.Headers.ContainsKey("Authorization"))
                 return AuthenticateResult.Fail("Access Denied");
 
-            if (!Request.Headers.ContainsKey("Token"))
+            if (!Request.Headers.ContainsKey("cToken"))
                 return AuthenticateResult.Fail("Access Denied");
 
             try
@@ -50,7 +50,7 @@ namespace AwsImgRekCSharp.Configurations
 
                 var tokenHeader = AuthenticationHeaderValue.Parse(Request.Headers["cToken"]);
                 string token = tokenHeader.Parameter;
-
+                
                 if (username != settings.Value.username || 
                     password != settings.Value.password ||
                     !service.tokenAuthenticated(token)

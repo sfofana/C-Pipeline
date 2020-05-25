@@ -60,7 +60,7 @@ namespace AwsImgRekCSharp.Services
             HttpResponseMessage response = await client.http()
                 .PostAsJsonAsync(settings.Value.sessionUrl, user);
             User session = await response.Content.ReadAsAsync<User>();
-            session.cToken = jwtUtil.signToken(session);
+            session.cToken = jwtUtil.signToken(user);
             return session;
         }
 
