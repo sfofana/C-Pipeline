@@ -16,7 +16,7 @@ namespace AwsImgRekCSharp.Configurations
         {
             settings = iSettings;
         }
-        public HttpClient http()
+        public HttpClient http(string token)
         {
             HttpClient client = new HttpClient();
             AuthenticationHeaderValue authValue = 
@@ -24,6 +24,7 @@ namespace AwsImgRekCSharp.Configurations
                     Encoding.UTF8.GetBytes($"{settings.Value.username}:{settings.Value.password}")
                     ));
             client.DefaultRequestHeaders.Authorization = authValue;
+            client.DefaultRequestHeaders.Add("jToken", "Bearer " + token);
             return client;
         }
     }

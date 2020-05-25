@@ -33,18 +33,16 @@ namespace AwsImgRekCSharp.Services
         }
         public async Task<Compare> CompareFacesResults(Compare faces, string token)
         {
-            setHeader(token);
-            HttpResponseMessage response = await client.http()
+            HttpResponseMessage response = await client.http(token)
                 .PostAsJsonAsync(settings.Value.compareUrl, faces);
             faces = await response.Content.ReadAsAsync<Compare>();
             return faces;
         }
         public async Task<Upload> ProcessUpload(string fileName, string token)
         {
-            setHeader(token);
             MultipartFormDataContent form = fileUtil.getFormData(fileName);
 
-            HttpResponseMessage response = await client.http()
+            HttpResponseMessage response = await client.http(token)
                 .PostAsync(settings.Value.uploadUrl + fileName, form);
             Upload process = await response.Content.ReadAsAsync<Upload>();
             return process;
@@ -57,16 +55,11 @@ namespace AwsImgRekCSharp.Services
 
         public async Task<User> Authenticate(User user)
         {
-            HttpResponseMessage response = await client.http()
+            HttpResponseMessage response = await client.http(null)
                 .PostAsJsonAsync(settings.Value.sessionUrl, user);
             User session = await response.Content.ReadAsAsync<User>();
             session.cToken = jwtUtil.signToken(user);
             return session;
-        }
-
-        private void setHeader(string token)
-        {
-            client.http().DefaultRequestHeaders.Add("jToken", "Bearer " + token);
         }
     }
 }
