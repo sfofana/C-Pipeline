@@ -15,26 +15,26 @@ namespace AwsImgRekCSharp.Services
 {
     public class UserService : IUserService
     {
-        private readonly JwtUtil jwtUtil;
-        private readonly IOptions<Settings> settings;
+        private readonly Settings settings;
+        private readonly JwtUtil jwtUtil;       
         private readonly HttpClientBuilder client;
         private readonly FileUtil fileUtil;
         public UserService(
             JwtUtil iJwtUtil,
-            IOptions<Settings> iSettings, 
+            VaultUtil vaultUtil, 
             HttpClientBuilder iClient, 
             FileUtil iFileUtil
             )
         {
-            jwtUtil = iJwtUtil;
-            settings = iSettings;
+            settings = vaultUtil.decrypt<Settings>();
+            jwtUtil = iJwtUtil;     
             client = iClient;
             fileUtil = iFileUtil;
         }
         public async Task<Compare> CompareFacesResults(Compare faces, string token)
         {
             HttpResponseMessage response = await client.http(token)
-                .PostAsJsonAsync(settings.Value.compareUrl, faces);
+                .PostAsJsonAsync(settings.compareUrl, faces);
             faces = await response.Content.ReadAsAsync<Compare>();
             return faces;
         }
@@ -43,7 +43,7 @@ namespace AwsImgRekCSharp.Services
             MultipartFormDataContent form = fileUtil.getFormData(fileName);
 
             HttpResponseMessage response = await client.http(token)
-                .PostAsync(settings.Value.uploadUrl + fileName, form);
+                .PostAsync(settings.uploadUrl + fileName, form);
             Upload process = await response.Content.ReadAsAsync<Upload>();
             return process;
         }
@@ -56,7 +56,7 @@ namespace AwsImgRekCSharp.Services
         public async Task<User> Authenticate(User user)
         {
             HttpResponseMessage response = await client.http(null)
-                .PostAsJsonAsync(settings.Value.sessionUrl, user);
+                .PostAsJsonAsync(settings.sessionUrl, user);
             User session = await response.Content.ReadAsAsync<User>();
             session.cToken = jwtUtil.signToken(user);
             return session;

@@ -15,15 +15,15 @@ namespace AwsImgRekCSharp.Utilities
 {
     public class JwtUtil
     {
-        private readonly IOptions<Settings> settings;
-        public JwtUtil(IOptions<Settings> iSettings)
+        private readonly Settings settings;
+        public JwtUtil(VaultUtil vaultUtil)
         {
-            settings = iSettings;
+            settings = vaultUtil.decrypt<Settings>();
         }
 
         public string signToken(User user)
         {
-            byte[] key = Encoding.ASCII.GetBytes(settings.Value.secretKey);
+            byte[] key = Encoding.ASCII.GetBytes(settings.secretKey);
             SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
@@ -45,7 +45,6 @@ namespace AwsImgRekCSharp.Utilities
             SecurityToken validToken;
             ClaimsPrincipal principal = getTokenHandler()
                 .ValidateToken(token, getParameters(), out validToken);
-            Console.WriteLine(validToken);
             return true;
         }
 
@@ -55,7 +54,7 @@ namespace AwsImgRekCSharp.Utilities
         }
         private TokenValidationParameters getParameters()
         {
-            byte[] key = Encoding.ASCII.GetBytes(settings.Value.secretKey);
+            byte[] key = Encoding.ASCII.GetBytes(settings.secretKey);
             return new TokenValidationParameters
             {
                 ValidateLifetime = false, 

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using AwsImgRekCSharp.Utilities;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +12,17 @@ namespace AwsImgRekCSharp.Configurations
 {
     public class HttpClientBuilder
     {
-        private readonly IOptions<Settings> settings;
-        public HttpClientBuilder(IOptions<Settings> iSettings)
+        private readonly Settings settings;
+        public HttpClientBuilder(VaultUtil vaultUtil)
         {
-            settings = iSettings;
+            settings = vaultUtil.decrypt<Settings>();
         }
         public HttpClient http(string token)
         {
             HttpClient client = new HttpClient();
             AuthenticationHeaderValue authValue = 
                 new AuthenticationHeaderValue("Basic", Convert.ToBase64String(
-                    Encoding.UTF8.GetBytes($"{settings.Value.username}:{settings.Value.password}")
+                    Encoding.UTF8.GetBytes($"{settings.username}:{settings.password}")
                     ));
             client.DefaultRequestHeaders.Authorization = authValue;
             client.DefaultRequestHeaders.Add("jToken", "Bearer " + token);

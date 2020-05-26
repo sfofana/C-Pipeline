@@ -12,32 +12,32 @@ namespace AwsImgRekCSharp.Utilities
 {
     public class FileUtil
     {
-        private readonly IOptions<Settings> settings;
-        public FileUtil(IOptions<Settings> iSettings)
+        private readonly Settings settings;
+        public FileUtil(VaultUtil vaultUtil)
         {
-            settings = iSettings;
+            settings = vaultUtil.decrypt<Settings>();
         }
         public string setFile(string fileName)
         {
-            Console.WriteLine(settings.Value.getPath());
-            if (!Directory.Exists(settings.Value.getPath()))
+            Console.WriteLine(settings.getPath());
+            if (!Directory.Exists(settings.getPath()))
             {
-                Directory.CreateDirectory(settings.Value.getPath());
+                Directory.CreateDirectory(settings.getPath());
             }
-            string SaveAs = Path.Combine(settings.Value.getPath(), fileName + settings.Value.extention);
+            string SaveAs = Path.Combine(settings.getPath(), fileName + settings.extention);
             return SaveAs;
         }
         public MultipartFormDataContent getFormData(string fileName)
         {
-            string file = Path.Combine(settings.Value.getPath(), fileName + settings.Value.extention);
+            string file = Path.Combine(settings.getPath(), fileName + settings.extention);
             byte[] data = File.ReadAllBytes(file);
 
             MultipartFormDataContent form = new MultipartFormDataContent();
             HttpContent content = new ByteArrayContent(data);
-            content.Headers.ContentDisposition = new ContentDispositionHeaderValue(settings.Value.formvalue)
+            content.Headers.ContentDisposition = new ContentDispositionHeaderValue(settings.formvalue)
             {
-                Name = settings.Value.formtype,
-                FileName = fileName + settings.Value.extention
+                Name = settings.formtype,
+                FileName = fileName + settings.extention
             };
             form.Add(content);
             return form;

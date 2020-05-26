@@ -1,4 +1,6 @@
-﻿using AwsImgRekCSharp.Services;
+﻿using AwsImgRekCSharp.Models;
+using AwsImgRekCSharp.Services;
+using AwsImgRekCSharp.Utilities;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -15,13 +17,11 @@ namespace AwsImgRekCSharp.Configurations
 {
     public class RestAuthHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
-        string username;
-        string password;
-        private readonly IOptions<Settings> settings;
+        private readonly Credentials credentials;
         private readonly UserService service;
         public RestAuthHandler(
+            VaultUtil vaultUtil,
             IOptionsMonitor<AuthenticationSchemeOptions> options,
-            IOptions<Settings> iSettings,
             ILoggerFactory logger,
             UrlEncoder encoder,
             ISystemClock clock,
@@ -29,11 +29,14 @@ namespace AwsImgRekCSharp.Configurations
             )
             : base(options, logger, encoder, clock)
         {
-            settings = iSettings;
+            credentials = vaultUtil.decrypt<Credentials>();
             service = iService;
         }
         protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
         {
+            string username;
+            string password;
+
             if (!Request.Headers.ContainsKey("Authorization"))
                 return AuthenticateResult.Fail("Access Denied");
 
@@ -44,15 +47,15 @@ namespace AwsImgRekCSharp.Configurations
             {
                 var authHeader = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
                 var credentialBytes = Convert.FromBase64String(authHeader.Parameter);
-                string[] credentials = Encoding.UTF8.GetString(credentialBytes).Split(":");
-                username = credentials[0];
-                password = credentials[1];
+                string[] userCredentials = Encoding.UTF8.GetString(credentialBytes).Split(":");
+                username = userCredentials[0];
+                password = userCredentials[1];
 
                 var tokenHeader = AuthenticationHeaderValue.Parse(Request.Headers["cToken"]);
                 string token = tokenHeader.Parameter;
                 
-                if (username != settings.Value.username || 
-                    password != settings.Value.password ||
+                if (username != credentials.username || 
+                    password != credentials.password ||
                     !service.tokenAuthenticated(token)
                     )
                    
