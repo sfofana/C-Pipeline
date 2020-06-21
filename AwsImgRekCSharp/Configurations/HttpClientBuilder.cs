@@ -17,6 +17,9 @@ namespace AwsImgRekCSharp.Configurations
         {
             settings = vaultUtil.decrypt<Settings>();
         }
+        /// <summary>HTTPs the specified token.</summary>
+        /// <param name="token">  The required Java JWT token to make a request</param>
+        /// <returns>Returns a rest client with built in basic auth and token bearer</returns>
         public HttpClient http(string token)
         {
             HttpClient client = new HttpClient();

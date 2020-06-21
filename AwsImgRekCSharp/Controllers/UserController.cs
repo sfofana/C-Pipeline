@@ -32,18 +32,27 @@ namespace AwsImgRekCSharp.Controllers
             service = iService;
             fileUtil = iFileUtil;
         }
+        /// <summary>Compares the faces get.</summary>
+        /// <param name="faces">  Parses faces to compare from body</param>
+        /// <returns>Returns similarity results only if token is valid</returns>
         [HttpGet("compare")]
         public async Task<Compare> CompareFacesGet([FromBody] Compare faces)
         {
             return await service.CompareFacesResults(faces, getToken());
         }
 
+        /// <summary>Compares the faces.</summary>
+        /// <param name="faces">  Parses faces to compare from body</param>
+        /// <returns>Returns similarity results only if token is valid</returns>
         [HttpPost("compare")]
         public async Task<Compare> CompareFaces([FromBody] Compare faces)
         {           
             return await service.CompareFacesResults(faces, getToken());
         }
 
+        /// <summary>Uploads the specified name.</summary>
+        /// <param name="name">  Parses file name from url and file from Form files</param>
+        /// <returns>Returns processed upload only if token is valid</returns>
         [HttpPost("upload/{name}")]
         public async Task<Upload> Upload(string name)
         {
@@ -59,6 +68,8 @@ namespace AwsImgRekCSharp.Controllers
             return await service.ProcessUpload(name, getToken());
         }
 
+        /// <summary>Gets the token.</summary>
+        /// <returns>Returns parsed jToken from header</returns>
         private string getToken()
         {
             var tokenHeader = AuthenticationHeaderValue.Parse(Request.Headers["jToken"]);

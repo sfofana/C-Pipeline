@@ -15,11 +15,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace AwsImgRekCSharp
 {
@@ -28,9 +30,6 @@ namespace AwsImgRekCSharp
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            //Configuration = new ConfigurationBuilder()
-            //    .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)).AddJsonFile("appsettings.json")
-            //    .Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -46,6 +45,10 @@ namespace AwsImgRekCSharp
             services.AddScoped<HttpClientBuilder>();
             services.AddScoped<UserService>();
             services.AddScoped<FileUtil>();
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new Info { Title = "Api Doc", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,6 +71,17 @@ namespace AwsImgRekCSharp
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
+            });
         }
+    }
+
+    internal class Info : OpenApiInfo
+    {
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Configurations
 {
+    /// <summary>Settings poco holding all necessary configuration settings</summary>
     public class Settings
     {
         public string secretKey { get; set; }

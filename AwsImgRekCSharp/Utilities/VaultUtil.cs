@@ -12,6 +12,9 @@ namespace AwsImgRekCSharp.Utilities
     {
         private string key = "/home/ec2-user/secret/key";
         private string encryption = "/home/ec2-user/secret/vault";
+        /// <summary>Decrypts this instance.</summary>
+        /// <typeparam name="T">Any object type typically Settings od Credentials</typeparam>
+        /// <returns>Decrypted JSON to string deserialized to poco</returns>
         public T decrypt<T>()
         {
             byte[] iv = new byte[16];
@@ -39,6 +42,10 @@ namespace AwsImgRekCSharp.Utilities
             }
         }
 
+        /// <summary>Jsons the string deserializer.</summary>
+        /// <typeparam name="T">deserialzes JSON string to type given in parameter</typeparam>
+        /// <param name="json">The json.</param>
+        /// <returns>Returns fully cooked poco</returns>
         private T jsonStringDeserializer<T>(string json)
         {
             return JsonSerializer.Deserialize<T>(json);

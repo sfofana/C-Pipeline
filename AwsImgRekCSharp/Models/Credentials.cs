@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Models
 {
+    /// <summary>Credentials poco holding all necessary configuration secrets</summary>
     public class Credentials
     {
         public string secretKey { get; set; }

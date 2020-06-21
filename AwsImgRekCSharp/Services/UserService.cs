@@ -48,7 +48,7 @@ namespace AwsImgRekCSharp.Services
             return process;
         }
 
-        public Boolean tokenAuthenticated(string token)
+        public bool TokenAuthenticated(string token)
         {
             return jwtUtil.validateToken(token);
         }
@@ -60,6 +60,14 @@ namespace AwsImgRekCSharp.Services
             User session = await response.Content.ReadAsAsync<User>();
             session.cToken = jwtUtil.signToken(user);
             return session;
+        }
+
+        public async Task<Logging> LogFrontEndToFile(Logging logging)
+        {
+            HttpResponseMessage response = await client.http(null)
+                .PostAsJsonAsync("http://ec2-3-17-26-55.us-east-2.compute.amazonaws.com:9000/api/v1/logging", logging);
+            Logging results = await response.Content.ReadAsAsync<Logging>();
+            return results;
         }
     }
 }

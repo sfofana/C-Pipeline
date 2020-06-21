@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Models
 {
+    /// <summary>Upload poco holding upload file details</summary>
     public class Upload
     {
         public string name { get; set; }

@@ -2,6 +2,12 @@ C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\De
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.exe
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.deps.json
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.runtimeconfig.json
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.runtimeconfig.dev.json
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.dll
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.pdb
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.xml
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
@@ -15,6 +21,7 @@ C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\De
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -26,6 +33,9 @@ C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\De
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
@@ -86,6 +96,7 @@ C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\De
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.csprojAssemblyReference.cache
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.csproj.CoreCompileInputs.cache
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.AssemblyInfoInputs.cache
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.AssemblyInfo.cs
@@ -94,10 +105,6 @@ C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\De
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\staticwebassets\AwsImgRekCSharp.StaticWebAssets.Manifest.cache
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\staticwebassets\AwsImgRekCSharp.StaticWebAssets.xml
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.dll
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.xml
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.pdb
-C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.deps.json
-C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.runtimeconfig.json
-C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.runtimeconfig.dev.json
-C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.dll
-C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\bin\Debug\netcoreapp3.1\AwsImgRekCSharp.pdb
 C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.genruntimeconfig.cache

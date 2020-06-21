@@ -22,10 +22,19 @@ namespace AwsImgRekCSharp.Controllers
             fileUtil = iFileUtil;
         }
 
+        /// <summary>Gets the access.</summary>
+        /// <param name="user">  Parses user from body</param>
+        /// <returns>Returns user with tokens</returns>
         [HttpPost("authenticate")]
         public async Task<User> GetAccess([FromBody] User user)
         {
             return await service.Authenticate(user);
+        }
+
+        [HttpPost("logging")]
+        public async Task<Logging> FrontEndLogs([FromBody] Logging logging)
+        {
+            return await service.LogFrontEndToFile(logging);
         }
     }
 }

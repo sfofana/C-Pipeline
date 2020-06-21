@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Models
 {
+    /// <summary>Compare poco holding names and faces to compare</summary>
     public class Compare
     {
         public List<string> names { get; set; }

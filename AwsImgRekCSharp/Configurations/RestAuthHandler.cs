@@ -32,6 +32,8 @@ namespace AwsImgRekCSharp.Configurations
             credentials = vaultUtil.decrypt<Credentials>();
             service = iService;
         }
+        /// <summary>Handles the authenticate asynchronous.</summary>
+        /// <returns>Global REST configuration requires basic authentication with username and password as well as cToken</returns>
         protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
         {
             string username;
@@ -56,7 +58,7 @@ namespace AwsImgRekCSharp.Configurations
                 
                 if (username != credentials.username || 
                     password != credentials.password ||
-                    !service.tokenAuthenticated(token)
+                    !service.TokenAuthenticated(token)
                     )
                    
                     return AuthenticateResult.Fail("Access Denied");
