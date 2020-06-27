@@ -1,18 +1,19 @@
 ﻿using AwsImgRekCSharp.Utilities;
-using Microsoft.Extensions.Options;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Configurations
 {
+
+    /// <summary>Template for http client.</summary>
     public class HttpClientBuilder
     {
         private readonly Settings settings;
+
+        /// <summary>Initializes a new instance of the <see cref="HttpClientBuilder" /> class.</summary>
+        /// <param name="vaultUtil">The vault utility.</param>
         public HttpClientBuilder(VaultUtil vaultUtil)
         {
             settings = vaultUtil.decrypt<Settings>();

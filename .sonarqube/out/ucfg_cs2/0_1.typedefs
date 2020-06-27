@@ -1,0 +1,7 @@
+é
+AwsImgRekCSharp.Startupobject
+:Startup(Microsoft.Extensions.Configuration.IConfiguration)RAwsImgRekCSharp.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)¸
+NConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)fAwsImgRekCSharp.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)÷
+mConfigure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)…AwsImgRekCSharp.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)>
+Configuration.get)AwsImgRekCSharp.Startup.Configuration.get>
+Configuration.set)AwsImgRekCSharp.Startup.Configuration.set

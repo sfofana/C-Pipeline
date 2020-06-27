@@ -1,0 +1,75 @@
+
+`AwsImgRekCSharp.Services.UserService.CompareFacesResults(AwsImgRekCSharp.Models.Compare, string)k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs(# ((6"0*ë
+0–
+“
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs*1 *(76
+%00AwsImgRekCSharp.Configurations.HttpClientBuilder"__id*f*d&
+$AwsImgRekCSharp.Services.UserService":
+client0AwsImgRekCSharp.Configurations.HttpClientBuilderž
+›
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs*1 *(C 
+%1System.Net.Http.HttpClient"=AwsImgRekCSharp.Configurations.HttpClientBuilder.http(string)*8
+6
+%00AwsImgRekCSharp.Configurations.HttpClientBuilder*
+
+tokenstring†
+ƒ
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs+! +()-
+%2'AwsImgRekCSharp.Configurations.Settings"__id*_*]&
+$AwsImgRekCSharp.Services.UserService"3
+settings'AwsImgRekCSharp.Configurations.Settingsç
+ä
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs+! +(4
+%3string"6AwsImgRekCSharp.Configurations.Settings.compareUrl.get*/
+-
+%2'AwsImgRekCSharp.Configurations.Settings…
+‚
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs*1 +(<*
+%4$System.Threading.Tasks.Task<TResult>"^System.Net.Http.HttpClientExtensions.PostAsJsonAsync<T>(System.Net.Http.HttpClient, string, T)*("&
+$System.Net.Http.HttpClientExtensions*"
+ 
+%1System.Net.Http.HttpClient*
+
+%3string*)
+'
+facesAwsImgRekCSharp.Models.Compare¯
+¬
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs*  +(</
+response#System.Net.Http.HttpResponseMessage"__id*
+""÷
+ô
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs, ,(*!
+%5System.Net.Http.HttpContent"/System.Net.Http.HttpResponseMessage.Content.get*1
+/
+response#System.Net.Http.HttpResponseMessage¿
+¼
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs, ,(A*
+%6$System.Threading.Tasks.Task<TResult>"QSystem.Net.Http.HttpContentExtensions.ReadAsAsync<T>(System.Net.Http.HttpContent)*)"'
+%System.Net.Http.HttpContentExtensions*#
+!
+%5System.Net.Http.HttpContent§
+¤
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs, ,(A'
+facesAwsImgRekCSharp.Models.Compare"__id*
+"""˜
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs- -()
+'
+facesAwsImgRekCSharp.Models.Compare*ˆ
+1"‚
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs. .(	
+implicit return:'
+facesAwsImgRekCSharp.Models.Compare:
+tokenstringB(&
+$AwsImgRekCSharp.Services.UserService

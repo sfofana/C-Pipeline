@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using AwsImgRekCSharp.Models;
 using AwsImgRekCSharp.Services;
-using AwsImgRekCSharp.Utilities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AwsImgRekCSharp.Controllers
 {
+    /// <summary>Controller pinged first for getting full access of the application</summary>
     [Route("api/v1")]
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
         private readonly UserService service;
-        private readonly FileUtil fileUtil;
-        public AuthenticationController(UserService iService, FileUtil iFileUtil)
+        /// <summary>Initializes a new instance of the <see cref="AuthenticationController" /> class.</summary>
+        /// <param name="service">The service.</param>
+        public AuthenticationController(UserService service)
         {
-            service = iService;
-            fileUtil = iFileUtil;
+            this.service = service;
         }
 
         /// <summary>Gets the access.</summary>
-        /// <param name="user">  Parses user from body</param>
+        /// <param name="user"> Parses user from body</param>
         /// <returns>Returns user with tokens</returns>
         [HttpPost("authenticate")]
         public async Task<User> GetAccess([FromBody] User user)
@@ -31,6 +27,9 @@ namespace AwsImgRekCSharp.Controllers
             return await service.Authenticate(user);
         }
 
+        /// <summary>Fronts the end logs.</summary>
+        /// <param name="logging">The logs from the frontend</param>
+        /// <returns>Logs saved success message</returns>
         [HttpPost("logging")]
         public async Task<Logging> FrontEndLogs([FromBody] Logging logging)
         {

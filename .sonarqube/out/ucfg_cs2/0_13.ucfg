@@ -1,0 +1,31 @@
+
+&AwsImgRekCSharp.Program.Main(string[])^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Program.cs ("0*Î
+0ú
+÷
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Program.cs (#/
+%0)Microsoft.Extensions.Hosting.IHostBuilder"3AwsImgRekCSharp.Program.CreateHostBuilder(string[])*"
+AwsImgRekCSharp.Program*
+
+argsstring[]üù
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Program.cs (+(
+%1"Microsoft.Extensions.Hosting.IHost"1Microsoft.Extensions.Hosting.IHostBuilder.Build()*1
+/
+%0)Microsoft.Extensions.Hosting.IHostBuilder2Build()Ç
+Ä
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Program.cs (1
+
+%2void"fMicrosoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(Microsoft.Extensions.Hosting.IHost)*B"@
+>Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions**
+(
+%1"Microsoft.Extensions.Hosting.IHost*
+1*z
+1"u
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Program.cs (	
+implicit return:
+argsstring[]B"
+AwsImgRekCSharp.Program

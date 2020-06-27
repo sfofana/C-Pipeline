@@ -1,0 +1,50 @@
+
+˝AwsImgRekCSharp.Configurations.RestAuthHandler.RestAuthHandler(AwsImgRekCSharp.Utilities.VaultUtil, Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock, AwsImgRekCSharp.Services.UserService)u
+kC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\RestAuthHandler.cs ("0*ü
+0÷
+”
+u
+kC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\RestAuthHandler.cs& &(3
+
+%0void"ñMicrosoft.AspNetCore.Authentication.AuthenticationHandler<TOptions>.AuthenticationHandler(Microsoft.Extensions.Options.IOptionsMonitor<TOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock)*GE
+CMicrosoft.AspNetCore.Authentication.AuthenticationHandler<TOptions>*C
+A
+options6Microsoft.Extensions.Options.IOptionsMonitor<TOptions>*7
+5
+logger+Microsoft.Extensions.Logging.ILoggerFactory*1
+/
+encoder$System.Text.Encodings.Web.UrlEncoder*;
+9
+clock0Microsoft.AspNetCore.Authentication.ISystemClockä
+á
+u
+kC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\RestAuthHandler.cs( ((:(
+%1"AwsImgRekCSharp.Models.Credentials"0AwsImgRekCSharp.Utilities.VaultUtil.decrypt<T>()*2
+0
+	vaultUtil#AwsImgRekCSharp.Utilities.VaultUtilì
+ê
+u
+kC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\RestAuthHandler.cs( ((:e0
+.AwsImgRekCSharp.Configurations.RestAuthHandler"1
+credentials"AwsImgRekCSharp.Models.Credentials"__id**
+(
+%1"AwsImgRekCSharp.Models.Credentialsò
+ï
+u
+kC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\RestAuthHandler.cs) )("c0
+.AwsImgRekCSharp.Configurations.RestAuthHandler"/
+service$AwsImgRekCSharp.Services.UserService"__id*1
+/
+service$AwsImgRekCSharp.Services.UserService*
+1*í
+1"å
+u
+kC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\RestAuthHandler.cs* *(	
+implicit return:0
+	vaultUtil#AwsImgRekCSharp.Utilities.VaultUtil:A
+options6Microsoft.Extensions.Options.IOptionsMonitor<TOptions>:5
+logger+Microsoft.Extensions.Logging.ILoggerFactory:/
+encoder$System.Text.Encodings.Web.UrlEncoder:9
+clock0Microsoft.AspNetCore.Authentication.ISystemClock:/
+service$AwsImgRekCSharp.Services.UserServiceB20
+.AwsImgRekCSharp.Configurations.RestAuthHandler

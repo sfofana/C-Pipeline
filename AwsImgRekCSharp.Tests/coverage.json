@@ -1,0 +1,818 @@
+{
+  "AwsImgRekCSharp.dll": {
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Program.cs": {
+      "AwsImgRekCSharp.Program": {
+        "System.Void AwsImgRekCSharp.Program::Main(System.String[])": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder AwsImgRekCSharp.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Startup.cs": {
+      "AwsImgRekCSharp.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration AwsImgRekCSharp.Startup::get_Configuration()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 1
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "56": 1,
+            "57": 1,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "62": 1,
+            "64": 1,
+            "66": 1,
+            "68": 2,
+            "70": 1,
+            "71": 2,
+            "72": 2,
+            "73": 2,
+            "75": 1,
+            "77": 1,
+            "78": 2,
+            "79": 2,
+            "80": 2,
+            "81": 1
+          },
+          "Branches": [
+            {
+              "Line": 57,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 9,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void AwsImgRekCSharp.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Utilities\\FileUtil.cs": {
+      "AwsImgRekCSharp.Utilities.FileUtil": {
+        "System.String AwsImgRekCSharp.Utilities.FileUtil::setFile(System.String)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 39,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 39,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Net.Http.MultipartFormDataContent AwsImgRekCSharp.Utilities.FileUtil::getFormData(System.String)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Utilities.FileUtil::.ctor(AwsImgRekCSharp.Utilities.VaultUtil)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Utilities\\JwtUtil.cs": {
+      "AwsImgRekCSharp.Utilities.JwtUtil": {
+        "System.String AwsImgRekCSharp.Utilities.JwtUtil::signToken(AwsImgRekCSharp.Models.User)": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1
+          },
+          "Branches": []
+        },
+        "System.Boolean AwsImgRekCSharp.Utilities.JwtUtil::validateToken(System.String)": {
+          "Lines": {
+            "44": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        },
+        "System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler AwsImgRekCSharp.Utilities.JwtUtil::getTokenHandler()": {
+          "Lines": {
+            "52": 2,
+            "53": 2,
+            "54": 2
+          },
+          "Branches": []
+        },
+        "Microsoft.IdentityModel.Tokens.TokenValidationParameters AwsImgRekCSharp.Utilities.JwtUtil::getParameters()": {
+          "Lines": {
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Utilities.JwtUtil::.ctor(AwsImgRekCSharp.Utilities.VaultUtil)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Utilities\\VaultUtil.cs": {
+      "AwsImgRekCSharp.Utilities.VaultUtil": {
+        "T AwsImgRekCSharp.Utilities.VaultUtil::decrypt()": {
+          "Lines": {
+            "19": 5,
+            "20": 5,
+            "21": 5,
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5,
+            "29": 5,
+            "31": 5,
+            "32": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5,
+            "36": 5,
+            "37": 5,
+            "38": 5,
+            "39": 5,
+            "43": 5
+          },
+          "Branches": []
+        },
+        "T AwsImgRekCSharp.Utilities.VaultUtil::jsonStringDeserializer(System.String)": {
+          "Lines": {
+            "50": 5,
+            "51": 5,
+            "52": 5
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Utilities.VaultUtil::.ctor()": {
+          "Lines": {
+            "13": 1,
+            "14": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Services\\UserService.cs": {
+      "AwsImgRekCSharp.Services.UserService": {
+        "System.Boolean AwsImgRekCSharp.Services.UserService::TokenAuthenticated(System.String)": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Services.UserService::.ctor(AwsImgRekCSharp.Utilities.JwtUtil,AwsImgRekCSharp.Utilities.VaultUtil,AwsImgRekCSharp.Configurations.HttpClientBuilder,AwsImgRekCSharp.Utilities.FileUtil)": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Services.UserService/<CompareFacesResults>d__5": {
+        "System.Void AwsImgRekCSharp.Services.UserService/<CompareFacesResults>d__5::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Services.UserService/<ProcessUpload>d__6": {
+        "System.Void AwsImgRekCSharp.Services.UserService/<ProcessUpload>d__6::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Services.UserService/<Authenticate>d__8": {
+        "System.Void AwsImgRekCSharp.Services.UserService/<Authenticate>d__8::MoveNext()": {
+          "Lines": {
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 1,
+            "63": 1
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Services.UserService/<LogFrontEndToFile>d__9": {
+        "System.Void AwsImgRekCSharp.Services.UserService/<LogFrontEndToFile>d__9::MoveNext()": {
+          "Lines": {
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Models\\Compare.cs": {
+      "AwsImgRekCSharp.Models.Compare": {
+        "System.Collections.Generic.List`1<System.String> AwsImgRekCSharp.Models.Compare::get_names()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> AwsImgRekCSharp.Models.Compare::get_images()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> AwsImgRekCSharp.Models.Compare::get_details()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Double AwsImgRekCSharp.Models.Compare::get_results()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Models\\Credentials.cs": {
+      "AwsImgRekCSharp.Models.Credentials": {
+        "System.String AwsImgRekCSharp.Models.Credentials::get_secretKey()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Models.Credentials::get_username()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Models.Credentials::get_password()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Models\\Logging.cs": {
+      "AwsImgRekCSharp.Models.Logging": {
+        "System.String AwsImgRekCSharp.Models.Logging::get_message()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Models\\Upload.cs": {
+      "AwsImgRekCSharp.Models.Upload": {
+        "System.String AwsImgRekCSharp.Models.Upload::get_name()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Models.Upload::get_process()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Models.Upload::get_image()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Models\\User.cs": {
+      "AwsImgRekCSharp.Models.User": {
+        "System.String AwsImgRekCSharp.Models.User::get_cToken()": {
+          "Lines": {
+            "11": 9
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Models.User::get_jToken()": {
+          "Lines": {
+            "12": 8
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Models.User::get_role()": {
+          "Lines": {
+            "13": 8
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Controllers\\AuthenticationController.cs": {
+      "AwsImgRekCSharp.Controllers.AuthenticationController": {
+        "System.Void AwsImgRekCSharp.Controllers.AuthenticationController::.ctor(AwsImgRekCSharp.Services.UserService,AwsImgRekCSharp.Utilities.FileUtil)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Controllers.AuthenticationController/<GetAccess>d__3": {
+        "System.Void AwsImgRekCSharp.Controllers.AuthenticationController/<GetAccess>d__3::MoveNext()": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "32": 1
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Controllers.AuthenticationController/<FrontEndLogs>d__4": {
+        "System.Void AwsImgRekCSharp.Controllers.AuthenticationController/<FrontEndLogs>d__4::MoveNext()": {
+          "Lines": {
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Controllers\\UserController.cs": {
+      "AwsImgRekCSharp.Controllers.UserController": {
+        "System.String AwsImgRekCSharp.Controllers.UserController::getToken()": {
+          "Lines": {
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Controllers.UserController::.ctor(AwsImgRekCSharp.Utilities.JwtUtil,AwsImgRekCSharp.Services.UserService,AwsImgRekCSharp.Utilities.FileUtil)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Controllers.UserController/<CompareFacesGet>d__4": {
+        "System.Void AwsImgRekCSharp.Controllers.UserController/<CompareFacesGet>d__4::MoveNext()": {
+          "Lines": {
+            "40": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Controllers.UserController/<CompareFaces>d__5": {
+        "System.Void AwsImgRekCSharp.Controllers.UserController/<CompareFaces>d__5::MoveNext()": {
+          "Lines": {
+            "49": 0,
+            "50": 0,
+            "51": 0
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Controllers.UserController/<Upload>d__6": {
+        "System.Void AwsImgRekCSharp.Controllers.UserController/<Upload>d__6::MoveNext()": {
+          "Lines": {
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0
+          },
+          "Branches": [
+            {
+              "Line": 60,
+              "Offset": 68,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 68,
+              "EndOffset": 179,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Configurations\\HttpClientBuilder.cs": {
+      "AwsImgRekCSharp.Configurations.HttpClientBuilder": {
+        "System.Net.Http.HttpClient AwsImgRekCSharp.Configurations.HttpClientBuilder::http(System.String)": {
+          "Lines": {
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1
+          },
+          "Branches": []
+        },
+        "System.Void AwsImgRekCSharp.Configurations.HttpClientBuilder::.ctor(AwsImgRekCSharp.Utilities.VaultUtil)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Configurations\\RestAuthHandler.cs": {
+      "AwsImgRekCSharp.Configurations.RestAuthHandler": {
+        "System.Void AwsImgRekCSharp.Configurations.RestAuthHandler::.ctor(AwsImgRekCSharp.Utilities.VaultUtil,Microsoft.Extensions.Options.IOptionsMonitor`1<Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions>,Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock,AwsImgRekCSharp.Services.UserService)": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        }
+      },
+      "AwsImgRekCSharp.Configurations.RestAuthHandler/<HandleAuthenticateAsync>d__3": {
+        "System.Void AwsImgRekCSharp.Configurations.RestAuthHandler/<HandleAuthenticateAsync>d__3::MoveNext()": {
+          "Lines": {
+            "38": 1,
+            "42": 1,
+            "43": 1,
+            "45": 0,
+            "46": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "56": 0,
+            "57": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "80": 1
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 39,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 42,
+              "Offset": 39,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 88,
+              "EndOffset": 106,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 319,
+              "EndOffset": 321,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 348,
+              "EndOffset": 350,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 319,
+              "EndOffset": 377,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 348,
+              "EndOffset": 377,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 382,
+              "EndOffset": 384,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 382,
+              "EndOffset": 400,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\sufya\\Documents\\Repository\\PipeLineC#\\C-Pipeline\\AwsImgRekCSharp\\Configurations\\Settings.cs": {
+      "AwsImgRekCSharp.Configurations.Settings": {
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_secretKey()": {
+          "Lines": {
+            "12": 5
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_username()": {
+          "Lines": {
+            "13": 5
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_password()": {
+          "Lines": {
+            "14": 5
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_sessionUrl()": {
+          "Lines": {
+            "15": 5
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_compareUrl()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_uploadUrl()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_directory()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_folder()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_extention()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_formvalue()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::get_formtype()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.String AwsImgRekCSharp.Configurations.Settings::getPath()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+Ü
+*AwsImgRekCSharp.Controllers.UserController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectà
+XUserController(AwsImgRekCSharp.Services.UserService, AwsImgRekCSharp.Utilities.FileUtil)ƒAwsImgRekCSharp.Controllers.UserController.UserController(AwsImgRekCSharp.Services.UserService, AwsImgRekCSharp.Utilities.FileUtil)‡
+,CompareFaces(AwsImgRekCSharp.Models.Compare)WAwsImgRekCSharp.Controllers.UserController.CompareFaces(AwsImgRekCSharp.Models.Compare)K
+Upload(string)9AwsImgRekCSharp.Controllers.UserController.Upload(string)C
+
+getToken()5AwsImgRekCSharp.Controllers.UserController.getToken()

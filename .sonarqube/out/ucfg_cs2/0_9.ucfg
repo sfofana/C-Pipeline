@@ -1,0 +1,32 @@
+
+1AwsImgRekCSharp.Configurations.Settings.getPath()n
+dC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs0 0("0*³
+0å
+â
+n
+dC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs2  2()
+%0string"5AwsImgRekCSharp.Configurations.Settings.directory.get*+)
+'AwsImgRekCSharp.Configurations.Settingsâ
+ß
+n
+dC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs2+ 2(1
+%1string"2AwsImgRekCSharp.Configurations.Settings.folder.get*+)
+'AwsImgRekCSharp.Configurations.SettingsÝ
+Ú
+n
+dC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs2 2(2
+%2string"&System.IO.Path.Combine(string, string)*"
+System.IO.Path*
+
+%0string*
+
+%1string"€
+n
+dC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs2 2(3
+
+%2string*‹
+1"…
+n
+dC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs3 3(	
+implicit returnB+)
+'AwsImgRekCSharp.Configurations.Settings

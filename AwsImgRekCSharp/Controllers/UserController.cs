@@ -1,44 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net.Http;
+﻿using System.IO;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using AwsImgRekCSharp.Models;
 using AwsImgRekCSharp.Services;
 using AwsImgRekCSharp.Utilities;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AwsImgRekCSharp.Controllers
 {
+    /// <summary>Controller of application</summary>
     [Authorize]
     [Route("api/v1")]
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly JwtUtil jwtUtil;
         private readonly UserService service;
         private readonly FileUtil fileUtil;
+        /// <summary>Initializes a new instance of the <see cref="UserController" /> class.</summary>
+        /// <param name="service">The service.</param>
+        /// <param name="fileUtil">The file utility.</param>
         public UserController(
-            JwtUtil iJwtutil,
-            UserService iService, 
-            FileUtil iFileUtil
+            UserService service, 
+            FileUtil fileUtil
             )
         {
-            jwtUtil = iJwtutil;
-            service = iService;
-            fileUtil = iFileUtil;
-        }
-        /// <summary>Compares the faces get.</summary>
-        /// <param name="faces">  Parses faces to compare from body</param>
-        /// <returns>Returns similarity results only if token is valid</returns>
-        [HttpGet("compare")]
-        public async Task<Compare> CompareFacesGet([FromBody] Compare faces)
-        {
-            return await service.CompareFacesResults(faces, getToken());
+            this.service = service;
+            this.fileUtil = fileUtil;
         }
 
         /// <summary>Compares the faces.</summary>

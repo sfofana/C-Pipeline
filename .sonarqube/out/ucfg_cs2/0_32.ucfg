@@ -1,0 +1,51 @@
+
+5AwsImgRekCSharp.Controllers.UserController.getToken()q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs= =("0*ÿ
+0…
+‚
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs?> ?(E+
+%0%Microsoft.AspNetCore.Http.HttpRequest"3Microsoft.AspNetCore.Mvc.ControllerBase.Request.get*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase‹
+ˆ
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs?> ?(M1
+%1+Microsoft.AspNetCore.Http.IHeaderDictionary"1Microsoft.AspNetCore.Http.HttpRequest.Headers.get*-
++
+%0%Microsoft.AspNetCore.Http.HttpRequestõ
+ò
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs?> ?(W2
+%2,Microsoft.Extensions.Primitives.StringValues"__mapGet*3
+1
+%1+Microsoft.AspNetCore.Http.IHeaderDictionary*
+
+jTokenÝ
+Ú
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs? ?(X7
+%31System.Net.Http.Headers.AuthenticationHeaderValue"?System.Net.Http.Headers.AuthenticationHeaderValue.Parse(string)*5"3
+1System.Net.Http.Headers.AuthenticationHeaderValue*4
+2
+%2,Microsoft.Extensions.Primitives.StringValuesù
+ö
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs? ?(X@
+tokenHeader1System.Net.Http.Headers.AuthenticationHeaderValue"__id*9
+7
+%31System.Net.Http.Headers.AuthenticationHeaderValue‰
+†
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs@ @((
+%4string"?System.Net.Http.Headers.AuthenticationHeaderValue.Parameter.get*B
+@
+tokenHeader1System.Net.Http.Headers.AuthenticationHeaderValue"ƒ
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs@ @()
+
+%4string*Ž
+1"ˆ
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.csA A(	
+implicit returnB.,
+*AwsImgRekCSharp.Controllers.UserController

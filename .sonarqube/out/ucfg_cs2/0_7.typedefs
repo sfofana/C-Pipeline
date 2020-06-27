@@ -1,0 +1,8 @@
+Ÿ
+$AwsImgRekCSharp.Services.UserServiceobjectý
+©UserService(AwsImgRekCSharp.Utilities.JwtUtil, AwsImgRekCSharp.Utilities.VaultUtil, AwsImgRekCSharp.Configurations.HttpClientBuilder, AwsImgRekCSharp.Utilities.FileUtil)ÎAwsImgRekCSharp.Services.UserService.UserService(AwsImgRekCSharp.Utilities.JwtUtil, AwsImgRekCSharp.Utilities.VaultUtil, AwsImgRekCSharp.Configurations.HttpClientBuilder, AwsImgRekCSharp.Utilities.FileUtil)Ÿ
+;CompareFacesResults(AwsImgRekCSharp.Models.Compare, string)`AwsImgRekCSharp.Services.UserService.CompareFacesResults(AwsImgRekCSharp.Models.Compare, string)c
+ProcessUpload(string, string)BAwsImgRekCSharp.Services.UserService.ProcessUpload(string, string)]
+TokenAuthenticated(string)?AwsImgRekCSharp.Services.UserService.TokenAuthenticated(string){
+)Authenticate(AwsImgRekCSharp.Models.User)NAwsImgRekCSharp.Services.UserService.Authenticate(AwsImgRekCSharp.Models.User)‹
+1LogFrontEndToFile(AwsImgRekCSharp.Models.Logging)VAwsImgRekCSharp.Services.UserService.LogFrontEndToFile(AwsImgRekCSharp.Models.Logging)

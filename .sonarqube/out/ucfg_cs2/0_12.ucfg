@@ -1,0 +1,66 @@
+
+WAwsImgRekCSharp.Controllers.UserController.CompareFaces(AwsImgRekCSharp.Models.Compare)q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs$# $(/"2*ì
+0‹
+ˆ
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs& &( *
+%0$AwsImgRekCSharp.Services.UserService"__id*a*_,
+*AwsImgRekCSharp.Controllers.UserController"/
+service$AwsImgRekCSharp.Services.UserServiceë
+è
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs&< &(F
+%1string"5AwsImgRekCSharp.Controllers.UserController.getToken()*.,
+*AwsImgRekCSharp.Controllers.UserControllerí
+ê
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs& &(G*
+%2$System.Threading.Tasks.Task<TResult>"`AwsImgRekCSharp.Services.UserService.CompareFacesResults(AwsImgRekCSharp.Models.Compare, string)*,
+*
+%0$AwsImgRekCSharp.Services.UserService*)
+'
+facesAwsImgRekCSharp.Models.Compare*
+
+%1string"{
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs& &(H
+""*Ž
+1"ˆ
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs' '(	
+implicit return*ú
+2µ
+²
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs$# $(/
+%3"__entrypoint*)
+'
+facesAwsImgRekCSharp.Models.Compare÷
+ô
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs$1 $(9
+%4"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*)
+'
+facesAwsImgRekCSharp.Models.Compareý
+ú
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs#	 #(
+%5"
+__annotate*HF
+DMicrosoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute(string)*)
+'
+facesAwsImgRekCSharp.Models.Compare½
+º
+q
+gC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs$0 $(H'
+facesAwsImgRekCSharp.Models.Compare"__annotation*
+
+%4*
+
+%5*
+0:'
+facesAwsImgRekCSharp.Models.CompareB.,
+*AwsImgRekCSharp.Controllers.UserController

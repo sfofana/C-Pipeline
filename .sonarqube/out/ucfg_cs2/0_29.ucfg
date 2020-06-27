@@ -1,0 +1,102 @@
+
+BAwsImgRekCSharp.Services.UserService.ProcessUpload(string, string)k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs6" 6(/"0*à
+0ü
+ù
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs8, 8(4(
+%0"AwsImgRekCSharp.Utilities.FileUtil"__id*Z*X&
+$AwsImgRekCSharp.Services.UserService".
+fileUtil"AwsImgRekCSharp.Utilities.FileUtilš
+—
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs8, 8(J.
+%1(System.Net.Http.MultipartFormDataContent"6AwsImgRekCSharp.Utilities.FileUtil.getFormData(string)**
+(
+%0"AwsImgRekCSharp.Utilities.FileUtil*
+
+fileNamestringÚ
+×
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs8% 8(J0
+form(System.Net.Http.MultipartFormDataContent"__id*0
+.
+%1(System.Net.Http.MultipartFormDataContent–
+“
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs:1 :(76
+%20AwsImgRekCSharp.Configurations.HttpClientBuilder"__id*f*d&
+$AwsImgRekCSharp.Services.UserService":
+client0AwsImgRekCSharp.Configurations.HttpClientBuilderž
+›
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs:1 :(C 
+%3System.Net.Http.HttpClient"=AwsImgRekCSharp.Configurations.HttpClientBuilder.http(string)*8
+6
+%20AwsImgRekCSharp.Configurations.HttpClientBuilder*
+
+tokenstring†
+ƒ
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs; ;(#-
+%4'AwsImgRekCSharp.Configurations.Settings"__id*_*]&
+$AwsImgRekCSharp.Services.UserService"3
+settings'AwsImgRekCSharp.Configurations.Settingsæ
+ã
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs; ;(-
+%5string"5AwsImgRekCSharp.Configurations.Settings.uploadUrl.get*/
+-
+%4'AwsImgRekCSharp.Configurations.Settings®
+«
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs; ;(8
+%6string"__concat*
+
+%5string*
+
+fileNamestringÏ
+Ì
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs:1 ;(?*
+%7$System.Threading.Tasks.Task<TResult>"ISystem.Net.Http.HttpClient.PostAsync(string, System.Net.Http.HttpContent)*"
+ 
+%3System.Net.Http.HttpClient*
+
+%6string*2
+0
+form(System.Net.Http.MultipartFormDataContent¯
+¬
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs:  ;(?/
+response#System.Net.Http.HttpResponseMessage"__id*
+""÷
+ô
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs<# <(3!
+%8System.Net.Http.HttpContent"/System.Net.Http.HttpResponseMessage.Content.get*1
+/
+response#System.Net.Http.HttpResponseMessage¿
+¼
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs<# <(I*
+%9$System.Threading.Tasks.Task<TResult>"QSystem.Net.Http.HttpContentExtensions.ReadAsAsync<T>(System.Net.Http.HttpContent)*)"'
+%System.Net.Http.HttpContentExtensions*#
+!
+%8System.Net.Http.HttpContent¨
+¥
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs< <(I(
+processAwsImgRekCSharp.Models.Upload"__id*
+"""™
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs= =(*
+(
+processAwsImgRekCSharp.Models.Upload*ˆ
+1"‚
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs> >(	
+implicit return:
+fileNamestring:
+tokenstringB(&
+$AwsImgRekCSharp.Services.UserService

@@ -1,0 +1,4 @@
+¸
+.AwsImgRekCSharp.Configurations.RestAuthHandlerCMicrosoft.AspNetCore.Authentication.AuthenticationHandler<TOptions>objectÑ
+ÎRestAuthHandler(AwsImgRekCSharp.Utilities.VaultUtil, Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock, AwsImgRekCSharp.Services.UserService)ýAwsImgRekCSharp.Configurations.RestAuthHandler.RestAuthHandler(AwsImgRekCSharp.Utilities.VaultUtil, Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock, AwsImgRekCSharp.Services.UserService)e
+HandleAuthenticateAsync()HAwsImgRekCSharp.Configurations.RestAuthHandler.HandleAuthenticateAsync()

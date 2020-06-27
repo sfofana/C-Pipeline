@@ -1,0 +1,96 @@
+
+NAwsImgRekCSharp.Services.UserService.Authenticate(AwsImgRekCSharp.Models.User)k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csO  O(,"0*‘
+0ñ
+ì
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csQ1 Q(76
+%00AwsImgRekCSharp.Configurations.HttpClientBuilder"__id*f*d&
+$AwsImgRekCSharp.Services.UserService":
+client0AwsImgRekCSharp.Configurations.HttpClientBuilderì
+ê
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csQ1 Q(B 
+%1System.Net.Http.HttpClient"=AwsImgRekCSharp.Configurations.HttpClientBuilder.http(string)*8
+6
+%00AwsImgRekCSharp.Configurations.HttpClientBuilder*
+""Ü
+É
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csR! R()-
+%2'AwsImgRekCSharp.Configurations.Settings"__id*_*]&
+$AwsImgRekCSharp.Services.UserService"3
+settings'AwsImgRekCSharp.Configurations.SettingsÁ
+‰
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csR! R(4
+%3string"6AwsImgRekCSharp.Configurations.Settings.sessionUrl.get*/
+-
+%2'AwsImgRekCSharp.Configurations.SettingsÅ
+˛
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csQ1 R(;*
+%4$System.Threading.Tasks.Task<TResult>"^System.Net.Http.HttpClientExtensions.PostAsJsonAsync<T>(System.Net.Http.HttpClient, string, T)*("&
+$System.Net.Http.HttpClientExtensions*"
+ 
+%1System.Net.Http.HttpClient*
+
+%3string*%
+#
+userAwsImgRekCSharp.Models.UserØ
+¨
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csQ  R(;/
+response#System.Net.Http.HttpResponseMessage"__id*
+""˜
+Ù
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csS! S(1!
+%5System.Net.Http.HttpContent"/System.Net.Http.HttpResponseMessage.Content.get*1
+/
+response#System.Net.Http.HttpResponseMessageø
+º
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csS! S(E*
+%6$System.Threading.Tasks.Task<TResult>"QSystem.Net.Http.HttpContentExtensions.ReadAsAsync<T>(System.Net.Http.HttpContent)*)"'
+%System.Net.Http.HttpContentExtensions*#
+!
+%5System.Net.Http.HttpContent¶
+£
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csS S(E&
+sessionAwsImgRekCSharp.Models.User"__id*
+""˘
+ˆ
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csT T($'
+%7!AwsImgRekCSharp.Utilities.JwtUtil"__id*X*V&
+$AwsImgRekCSharp.Services.UserService",
+jwtUtil!AwsImgRekCSharp.Utilities.JwtUtilö
+ó
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csT T(4
+%8string"HAwsImgRekCSharp.Utilities.JwtUtil.signToken(AwsImgRekCSharp.Models.User)*)
+'
+%7!AwsImgRekCSharp.Utilities.JwtUtil*%
+#
+userAwsImgRekCSharp.Models.Userﬁ
+€
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csT T(4
+
+%9void"&AwsImgRekCSharp.Models.User.cToken.set*(
+&
+sessionAwsImgRekCSharp.Models.User*
+
+%8string"ó
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csU U((
+&
+sessionAwsImgRekCSharp.Models.User*à
+1"Ç
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csV V(	
+implicit return:#
+userAwsImgRekCSharp.Models.UserB(&
+$AwsImgRekCSharp.Services.UserService

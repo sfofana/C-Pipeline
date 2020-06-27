@@ -1,0 +1,88 @@
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs
+http 113
+http -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\RestAuthHandler.cs
+HandleAuthenticateAsync 13
+HandleAuthenticateAsync -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs
+getPath 10
+getPath -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs
+GetAccess 14
+GetAccess -1
+FrontEndLogs 9
+FrontEndLogs -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs
+CompareFaces 10
+CompareFaces -1
+Upload 10
+Upload -1
+getToken 14
+getToken -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Models\Compare.cs
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Models\Credentials.cs
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Models\Logging.cs
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Models\Upload.cs
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Models\User.cs
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Program.cs
+Main 13
+Main -1
+CreateHostBuilder 9
+CreateHostBuilder -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs
+CompareFacesResults 9
+CompareFacesResults -1
+ProcessUpload 9
+ProcessUpload -1
+TokenAuthenticated 10
+TokenAuthenticated -1
+Authenticate 10
+Authenticate -1
+LogFrontEndToFile 10
+LogFrontEndToFile -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.cs
+ConfigureServices 13
+ConfigureServices -1
+Configure 10
+Configure -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs
+setFile 18
+setFile -1
+getFormData 14
+getFormData -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs
+signToken 18
+signToken -1
+validateToken 11
+validateToken -1
+getTokenHandler 10
+getTokenHandler -1
+getParameters 13
+getParameters -1
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\VaultUtil.cs
+decrypt 10
+decrypt -1
+jsonStringDeserializer 10
+jsonStringDeserializer -1
+
+C:\Users\sufya\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.MvcApplicationPartsAssemblyInfo.cs
+
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\obj\Debug\netcoreapp3.1\AwsImgRekCSharp.AssemblyInfo.cs
+

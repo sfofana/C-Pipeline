@@ -1,0 +1,85 @@
+
+…AwsImgRekCSharp.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.cs9 9("0*ï
+0á
+Þ
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.cs; ;(#
+
+%0bool"vMicrosoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)*=";
+9Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions*9
+7
+env0Microsoft.AspNetCore.Hosting.IWebHostEnvironment*
+1
+2*°
+1¥
+¢
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.cs= =(/6
+%10Microsoft.AspNetCore.Builder.IApplicationBuilder"‰Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions.UseDeveloperExceptionPage(Microsoft.AspNetCore.Builder.IApplicationBuilder)*A"?
+=Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+2*ä
+2¬
+©
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.cs@ @(6
+%20Microsoft.AspNetCore.Builder.IApplicationBuilder"…Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseRouting(Microsoft.AspNetCore.Builder.IApplicationBuilder)*L"J
+HMicrosoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilderŒ
+‰
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.csB B(#6
+%30Microsoft.AspNetCore.Builder.IApplicationBuilder"yMicrosoft.AspNetCore.Builder.AuthAppBuilderExtensions.UseAuthentication(Microsoft.AspNetCore.Builder.IApplicationBuilder)*9"7
+5Microsoft.AspNetCore.Builder.AuthAppBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilderž
+›
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.csD D("6
+%40Microsoft.AspNetCore.Builder.IApplicationBuilder"Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions.UseAuthorization(Microsoft.AspNetCore.Builder.IApplicationBuilder)*B"@
+>Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilderÖ
+Ó
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.csF F(^6
+%50Microsoft.AspNetCore.Builder.IApplicationBuilder"ºMicrosoft.AspNetCore.Builder.CorsMiddlewareExtensions.UseCors(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>)*9"7
+5Microsoft.AspNetCore.Builder.CorsMiddlewareExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""ù
+ö
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.csH K(6
+%60Microsoft.AspNetCore.Builder.IApplicationBuilder"ÊMicrosoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Microsoft.AspNetCore.Routing.IEndpointRouteBuilder>)*L"J
+HMicrosoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""Ì
+É
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.csM M(6
+%70Microsoft.AspNetCore.Builder.IApplicationBuilder"°Microsoft.AspNetCore.Builder.SwaggerBuilderExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Swashbuckle.AspNetCore.Swagger.SwaggerOptions>)*9"7
+5Microsoft.AspNetCore.Builder.SwaggerBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""Ö
+Ó
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.csO R(6
+%80Microsoft.AspNetCore.Builder.IApplicationBuilder"¸Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions.UseSwaggerUI(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIOptions>)*;"9
+7Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""*
+3*z
+3"u
+^
+TC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Startup.csS S(	
+implicit return:7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder:7
+env0Microsoft.AspNetCore.Hosting.IWebHostEnvironmentB
+AwsImgRekCSharp.Startup

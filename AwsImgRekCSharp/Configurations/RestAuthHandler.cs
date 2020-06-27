@@ -5,8 +5,6 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
@@ -15,22 +13,32 @@ using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Configurations
 {
+
+    /// <summary>Responsible for basic and jwt authentication</summary>
     public class RestAuthHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
         private readonly Credentials credentials;
         private readonly UserService service;
+
+        /// <summary>Initializes a new instance of the <see cref="RestAuthHandler" /> class.</summary>
+        /// <param name="vaultUtil">The vault utility.</param>
+        /// <param name="options">The options.</param>
+        /// <param name="logger">The logger.</param>
+        /// <param name="encoder">The encoder.</param>
+        /// <param name="clock">The clock.</param>
+        /// <param name="service">The service.</param>
         public RestAuthHandler(
             VaultUtil vaultUtil,
             IOptionsMonitor<AuthenticationSchemeOptions> options,
             ILoggerFactory logger,
             UrlEncoder encoder,
             ISystemClock clock,
-            UserService iService
+            UserService service
             )
             : base(options, logger, encoder, clock)
         {
             credentials = vaultUtil.decrypt<Credentials>();
-            service = iService;
+            this.service = service;
         }
         /// <summary>Handles the authenticate asynchronous.</summary>
         /// <returns>Global REST configuration requires basic authentication with username and password as well as cToken</returns>

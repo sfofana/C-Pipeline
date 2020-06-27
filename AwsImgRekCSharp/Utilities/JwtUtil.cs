@@ -1,26 +1,27 @@
 ﻿using AwsImgRekCSharp.Configurations;
 using AwsImgRekCSharp.Models;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
-using System.Security.Principal;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Utilities
 {
+    /// <summary>JWT Utility</summary>
     public class JwtUtil
     {
         private readonly Settings settings;
+        /// <summary>Initializes a new instance of the <see cref="JwtUtil" /> class.</summary>
+        /// <param name="vaultUtil">The vault utility.</param>
         public JwtUtil(VaultUtil vaultUtil)
         {
             settings = vaultUtil.decrypt<Settings>();
         }
 
+        /// <summary>  Generates a JWT token</summary>
+        /// <param name="user">The user.</param>
+        /// <returns>the JWT as a string</returns>
         public string signToken(User user)
         {
             byte[] key = Encoding.ASCII.GetBytes(settings.secretKey);
@@ -40,10 +41,13 @@ namespace AwsImgRekCSharp.Utilities
             return getTokenHandler().WriteToken(token);
         }
 
+        /// <summary>Validates the token.</summary>
+        /// <param name="token">The token.</param>
+        /// <returns>Flag</returns>
         public Boolean validateToken(string token)
         {
             SecurityToken validToken;
-            ClaimsPrincipal principal = getTokenHandler()
+            getTokenHandler()
                 .ValidateToken(token, getParameters(), out validToken);
             return true;
         }

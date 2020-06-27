@@ -1,0 +1,96 @@
+
+1AwsImgRekCSharp.Utilities.JwtUtil.getParameters()h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs;* ;(7"0*Þ
+0Ã
+À
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs= =('
+%0System.Text.Encoding"System.Text.Encoding.ASCII.get*"
+System.Text.Encoding€
+ý
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs=1 =(9-
+%1'AwsImgRekCSharp.Configurations.Settings"__id*\*Z#
+!AwsImgRekCSharp.Utilities.JwtUtil"3
+settings'AwsImgRekCSharp.Configurations.Settingsã
+à
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs=1 =(C
+%2string"5AwsImgRekCSharp.Configurations.Settings.secretKey.get*/
+-
+%1'AwsImgRekCSharp.Configurations.Settingsâß
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs= =(D
+%3byte[]"%System.Text.Encoding.GetBytes(string)*
+
+%0System.Text.Encoding*
+
+%2string2GetBytes(string)’
+
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs= =(D
+keybyte[]"__id*
+
+%3byte[]çä
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs> D(>
+%48Microsoft.IdentityModel.Tokens.TokenValidationParameters"8Microsoft.IdentityModel.Tokens.TokenValidationParameters‘
+Ž
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs> >(0
+
+%5void"TMicrosoft.IdentityModel.Tokens.TokenValidationParameters.TokenValidationParameters()*@
+>
+%48Microsoft.IdentityModel.Tokens.TokenValidationParameters’
+
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs@ @((
+
+%6void"MMicrosoft.IdentityModel.Tokens.TokenValidationParameters.ValidateLifetime.set*@
+>
+%48Microsoft.IdentityModel.Tokens.TokenValidationParameters*
+""’
+
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.csA A((
+
+%7void"MMicrosoft.IdentityModel.Tokens.TokenValidationParameters.ValidateAudience.set*@
+>
+%48Microsoft.IdentityModel.Tokens.TokenValidationParameters*
+""
+
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.csB B(&
+
+%8void"KMicrosoft.IdentityModel.Tokens.TokenValidationParameters.ValidateIssuer.set*@
+>
+%48Microsoft.IdentityModel.Tokens.TokenValidationParameters*
+""ÝÚ
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.csC# C(@9
+%93Microsoft.IdentityModel.Tokens.SymmetricSecurityKey"3Microsoft.IdentityModel.Tokens.SymmetricSecurityKeyš
+—
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.csC' C(;
+%10void"PMicrosoft.IdentityModel.Tokens.SymmetricSecurityKey.SymmetricSecurityKey(byte[])*;
+9
+%93Microsoft.IdentityModel.Tokens.SymmetricSecurityKey*
+
+keybyte[]È
+Å
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.csC C(@
+%11void"MMicrosoft.IdentityModel.Tokens.TokenValidationParameters.IssuerSigningKey.set*@
+>
+%48Microsoft.IdentityModel.Tokens.TokenValidationParameters*;
+9
+%93Microsoft.IdentityModel.Tokens.SymmetricSecurityKey"¬
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs> D(@
+>
+%48Microsoft.IdentityModel.Tokens.TokenValidationParameters*„
+1"
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.csE E(	
+implicit returnB%#
+!AwsImgRekCSharp.Utilities.JwtUtil

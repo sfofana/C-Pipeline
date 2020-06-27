@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AwsImgRekCSharp</name>
+    </assembly>
+    <members>
+        <member name="T:AwsImgRekCSharp.Configurations.HttpClientBuilder">
+            <summary>Template for http client.</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Configurations.HttpClientBuilder.#ctor(AwsImgRekCSharp.Utilities.VaultUtil)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Configurations.HttpClientBuilder" /> class.</summary>
+            <param name="vaultUtil">The vault utility.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Configurations.HttpClientBuilder.http(System.String)">
+            <summary>HTTPs the specified token.</summary>
+            <param name="token">  The required Java JWT token to make a request</param>
+            <returns>Returns a rest client with built in basic auth and token bearer</returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Configurations.RestAuthHandler">
+            <summary>Responsible for basic and jwt authentication</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Configurations.RestAuthHandler.#ctor(AwsImgRekCSharp.Utilities.VaultUtil,Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock,AwsImgRekCSharp.Services.UserService)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Configurations.RestAuthHandler" /> class.</summary>
+            <param name="vaultUtil">The vault utility.</param>
+            <param name="options">The options.</param>
+            <param name="logger">The logger.</param>
+            <param name="encoder">The encoder.</param>
+            <param name="clock">The clock.</param>
+            <param name="service">The service.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Configurations.RestAuthHandler.HandleAuthenticateAsync">
+            <summary>Handles the authenticate asynchronous.</summary>
+            <returns>Global REST configuration requires basic authentication with username and password as well as cToken</returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Configurations.Settings">
+            <summary>Settings poco holding all necessary configuration settings</summary>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.secretKey">
+            <summary>Gets or sets the secret key.</summary>
+            <value>The secret key.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.username">
+            <summary>Gets or sets the username.</summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.password">
+            <summary>Gets or sets the password.</summary>
+            <value>The password.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.sessionUrl">
+            <summary>Gets or sets the session URL.</summary>
+            <value>The session URL.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.compareUrl">
+            <summary>
+             Gets or sets the compare URL.
+            </summary>
+            <value>The compare URL.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.uploadUrl">
+            <summary>Gets or sets the upload URL.</summary>
+            <value>The upload URL.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.logUrl">
+            <summary>Gets or sets the log URL.</summary>
+            <value>The log URL.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.directory">
+            <summary>Gets or sets the directory.</summary>
+            <value>The directory.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.folder">
+            <summary>Gets or sets the folder.</summary>
+            <value>The folder.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.extention">
+            <summary>Gets or sets the extention.</summary>
+            <value>The extention.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.formvalue">
+            <summary>Gets or sets the formvalue.</summary>
+            <value>The formvalue.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Configurations.Settings.formtype">
+            <summary>Gets or sets the formtype.</summary>
+            <value>The formtype.</value>
+        </member>
+        <member name="M:AwsImgRekCSharp.Configurations.Settings.getPath">
+            <summary>Gets the path.</summary>
+            <returns></returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Controllers.AuthenticationController">
+            <summary>Controller pinged first for getting full access of the application</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Controllers.AuthenticationController.#ctor(AwsImgRekCSharp.Services.UserService)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Controllers.AuthenticationController" /> class.</summary>
+            <param name="service">The service.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Controllers.AuthenticationController.GetAccess(AwsImgRekCSharp.Models.User)">
+            <summary>Gets the access.</summary>
+            <param name="user"> Parses user from body</param>
+            <returns>Returns user with tokens</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Controllers.AuthenticationController.FrontEndLogs(AwsImgRekCSharp.Models.Logging)">
+            <summary>Fronts the end logs.</summary>
+            <param name="logging">The logs from the frontend</param>
+            <returns>Logs saved success message</returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Controllers.UserController">
+            <summary>Controller of application</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Controllers.UserController.#ctor(AwsImgRekCSharp.Services.UserService,AwsImgRekCSharp.Utilities.FileUtil)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Controllers.UserController" /> class.</summary>
+            <param name="service">The service.</param>
+            <param name="fileUtil">The file utility.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Controllers.UserController.CompareFaces(AwsImgRekCSharp.Models.Compare)">
+            <summary>Compares the faces.</summary>
+            <param name="faces">  Parses faces to compare from body</param>
+            <returns>Returns similarity results only if token is valid</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Controllers.UserController.Upload(System.String)">
+            <summary>Uploads the specified name.</summary>
+            <param name="name">  Parses file name from url and file from Form files</param>
+            <returns>Returns processed upload only if token is valid</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Controllers.UserController.getToken">
+            <summary>Gets the token.</summary>
+            <returns>Returns parsed jToken from header</returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Models.Compare">
+            <summary>Compare poco holding names and faces to compare</summary>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Compare.names">
+            <summary>Gets or sets the names.</summary>
+            <value>The names.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Compare.images">
+            <summary>Gets or sets the images.</summary>
+            <value>The images.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Compare.details">
+            <summary>Gets or sets the details.</summary>
+            <value>The details.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Compare.results">
+            <summary>Gets or sets the results.</summary>
+            <value>The results.</value>
+        </member>
+        <member name="T:AwsImgRekCSharp.Models.Credentials">
+            <summary>Credentials poco holding all necessary configuration secrets</summary>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Credentials.secretKey">
+            <summary>Gets or sets the secret key.</summary>
+            <value>The secret key.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Credentials.username">
+            <summary>Gets or sets the username.</summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Credentials.password">
+            <summary>Gets or sets the password.</summary>
+            <value>The password.</value>
+        </member>
+        <member name="T:AwsImgRekCSharp.Models.Logging">
+            <summary>Log poco holding logs from the front end</summary>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Logging.message">
+            <summary>Gets or sets the message.</summary>
+            <value>The message.</value>
+        </member>
+        <member name="T:AwsImgRekCSharp.Models.Upload">
+            <summary>Upload poco holding upload file details</summary>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Upload.name">
+            <summary>Gets or sets the name.</summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Upload.process">
+            <summary>Gets or sets the process.</summary>
+            <value>The process.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.Upload.image">
+            <summary>Gets or sets the image.</summary>
+            <value>The image.</value>
+        </member>
+        <member name="T:AwsImgRekCSharp.Models.User">
+            <summary>User poco holding elements which allows user to use application</summary>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.User.cToken">
+            <summary>Gets or sets the c token.</summary>
+            <value>The c token.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.User.jToken">
+            <summary>Gets or sets the j token.</summary>
+            <value>The j token.</value>
+        </member>
+        <member name="P:AwsImgRekCSharp.Models.User.role">
+            <summary>Gets or sets the role.</summary>
+            <value>The role.</value>
+        </member>
+        <member name="T:AwsImgRekCSharp.Program">
+            <summary>Application entry point</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Program.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Program" /> class.</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Program.Main(System.String[])">
+            <summary>Defines the entry point of the application.</summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Program.CreateHostBuilder(System.String[])">
+            <summary>Creates the host builder.</summary>
+            <param name="args">The arguments.</param>
+            <returns></returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Services.UserService">
+            <summary>The main provider of the application</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Services.UserService.#ctor(AwsImgRekCSharp.Utilities.JwtUtil,AwsImgRekCSharp.Utilities.VaultUtil,AwsImgRekCSharp.Configurations.HttpClientBuilder,AwsImgRekCSharp.Utilities.FileUtil)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Services.UserService" /> class.</summary>
+            <param name="jwtUtil">The JWT utility.</param>
+            <param name="vaultUtil">The vault utility.</param>
+            <param name="client">The client.</param>
+            <param name="fileUtil">The file utility.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Services.UserService.CompareFacesResults(AwsImgRekCSharp.Models.Compare,System.String)">
+            <summary>
+            Sends a http post request to a java service and compares 
+            the faces results only if JWT token is valid.
+            </summary>
+            <param name="faces">The faces.</param>
+            <param name="token">The token.</param>
+            <returns>Results and compared faces in poco</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Services.UserService.ProcessUpload(System.String,System.String)">
+            <summary>
+            Sends a http post request to a java service and processes 
+            the uploaded file only if JWT token is valid
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <param name="token">The token.</param>
+            <returns>The image uploaded and success details in poco</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Services.UserService.TokenAuthenticated(System.String)">
+            <summary>Validates token.</summary>
+            <param name="token">The token.</param>
+            <returns>flag depending on if token is valid or not</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Services.UserService.Authenticate(AwsImgRekCSharp.Models.User)">
+            <summary>
+            Provides a token from the C# application and sends a 
+            http post request to a java service to request a token from the 
+            Java application.
+            </summary>
+            <param name="user">The user.</param>
+            <returns>C# and Java JWT tokens in poco</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Services.UserService.LogFrontEndToFile(AwsImgRekCSharp.Models.Logging)">
+            <summary>
+            Sends a http post request to a java service of logs from the 
+            front end only if JWT token is valid
+            </summary>
+            <param name="logging">The logs.</param>
+            <returns>Success message in poco</returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Startup">
+            <summary>Startup</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Startup" /> class.</summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:AwsImgRekCSharp.Startup.Configuration">
+            <summary>Gets the configuration.</summary>
+            <value>The configuration.</value>
+        </member>
+        <member name="M:AwsImgRekCSharp.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add 
+            services to the container. Configures the services.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to 
+            configure the HTTP request pipeline. Configures the specified 
+            application.</summary>
+            <param name="app">The application.</param>
+            <param name="env">The env.</param>
+        </member>
+        <member name="T:AwsImgRekCSharp.Utilities.FileUtil">
+            <summary>File Utility</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.FileUtil.#ctor(AwsImgRekCSharp.Utilities.VaultUtil)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Utilities.FileUtil" /> class.</summary>
+            <param name="vaultUtil">The vault utility.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.FileUtil.setFile(System.String)">
+            <summary>Sets and saves the file.</summary>
+            <param name="fileName">Name of the file.</param>
+            <returns>File path</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.FileUtil.getFormData(System.String)">
+            <summary>  Prepares form data for a file.</summary>
+            <param name="fileName">Name of the file.</param>
+            <returns>Form data content for post request</returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Utilities.JwtUtil">
+            <summary>JWT Utility</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.JwtUtil.#ctor(AwsImgRekCSharp.Utilities.VaultUtil)">
+            <summary>Initializes a new instance of the <see cref="T:AwsImgRekCSharp.Utilities.JwtUtil" /> class.</summary>
+            <param name="vaultUtil">The vault utility.</param>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.JwtUtil.signToken(AwsImgRekCSharp.Models.User)">
+            <summary>  Generates a JWT token</summary>
+            <param name="user">The user.</param>
+            <returns>the JWT as a string</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.JwtUtil.validateToken(System.String)">
+            <summary>Validates the token.</summary>
+            <param name="token">The token.</param>
+            <returns>Flag</returns>
+        </member>
+        <member name="T:AwsImgRekCSharp.Utilities.VaultUtil">
+            <summary>Vault Utility</summary>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.VaultUtil.decrypt``1">
+            <summary>Decrypts this instance.</summary>
+            <typeparam name="T">Any object type typically Settings od Credentials</typeparam>
+            <returns>Decrypted JSON to string deserialized to poco</returns>
+        </member>
+        <member name="M:AwsImgRekCSharp.Utilities.VaultUtil.jsonStringDeserializer``1(System.String)">
+            <summary>Jsons the string deserializer.</summary>
+            <typeparam name="T">deserialzes JSON string to type given in parameter</typeparam>
+            <param name="json">The json.</param>
+            <returns>Returns fully cooked poco</returns>
+        </member>
+    </members>
+</doc>

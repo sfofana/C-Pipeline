@@ -1,0 +1,5 @@
+»
+4AwsImgRekCSharp.Controllers.AuthenticationController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectµ
+>AuthenticationController(AwsImgRekCSharp.Services.UserService)sAwsImgRekCSharp.Controllers.AuthenticationController.AuthenticationController(AwsImgRekCSharp.Services.UserService)…
+&GetAccess(AwsImgRekCSharp.Models.User)[AwsImgRekCSharp.Controllers.AuthenticationController.GetAccess(AwsImgRekCSharp.Models.User)‘
+,FrontEndLogs(AwsImgRekCSharp.Models.Logging)aAwsImgRekCSharp.Controllers.AuthenticationController.FrontEndLogs(AwsImgRekCSharp.Models.Logging)

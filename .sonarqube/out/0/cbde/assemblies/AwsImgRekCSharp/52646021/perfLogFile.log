@@ -1,0 +1,13 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs	21	_AwsImgRekCSharp.Utilities.FileUtil.setFile$string$	0	5
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs	34	_AwsImgRekCSharp.Utilities.FileUtil.getFormData$string$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs	23	_AwsImgRekCSharp.Configurations.HttpClientBuilder.http$string$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs	24	_AwsImgRekCSharp.Utilities.JwtUtil.signToken$AwsImgRekCSharp.Models.User$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs	46	_AwsImgRekCSharp.Utilities.JwtUtil.validateToken$string$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs	54	_AwsImgRekCSharp.Utilities.JwtUtil.getTokenHandler$$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs	58	_AwsImgRekCSharp.Utilities.JwtUtil.getParameters$$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Program.cs	17	_AwsImgRekCSharp.Program.Main$string$$$	0	3
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\Settings.cs	47	_AwsImgRekCSharp.Configurations.Settings.getPath$$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\UserController.cs	60	_AwsImgRekCSharp.Controllers.UserController.getToken$$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs	66	_AwsImgRekCSharp.Services.UserService.TokenAuthenticated$string$	0	2
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\VaultUtil.cs	45	_AwsImgRekCSharp.Utilities.VaultUtil.jsonStringDeserializer$T$$string$	0	2

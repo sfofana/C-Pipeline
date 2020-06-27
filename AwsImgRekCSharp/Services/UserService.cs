@@ -1,36 +1,42 @@
 ﻿using AwsImgRekCSharp.Configurations;
 using AwsImgRekCSharp.Models;
 using AwsImgRekCSharp.Utilities;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Services
 {
-    public class UserService : IUserService
+    /// <summary>The main provider of the application</summary>
+    public class UserService
     {
         private readonly Settings settings;
         private readonly JwtUtil jwtUtil;       
         private readonly HttpClientBuilder client;
         private readonly FileUtil fileUtil;
+        /// <summary>Initializes a new instance of the <see cref="UserService" /> class.</summary>
+        /// <param name="jwtUtil">The JWT utility.</param>
+        /// <param name="vaultUtil">The vault utility.</param>
+        /// <param name="client">The client.</param>
+        /// <param name="fileUtil">The file utility.</param>
         public UserService(
-            JwtUtil iJwtUtil,
+            JwtUtil jwtUtil,
             VaultUtil vaultUtil, 
-            HttpClientBuilder iClient, 
-            FileUtil iFileUtil
+            HttpClientBuilder client, 
+            FileUtil fileUtil
             )
         {
             settings = vaultUtil.decrypt<Settings>();
-            jwtUtil = iJwtUtil;     
-            client = iClient;
-            fileUtil = iFileUtil;
+            this.jwtUtil = jwtUtil;     
+            this.client = client;
+            this.fileUtil = fileUtil;
         }
+        /// <summary>
+        /// Sends a http post request to a java service and compares 
+        /// the faces results only if JWT token is valid.
+        /// </summary>
+        /// <param name="faces">The faces.</param>
+        /// <param name="token">The token.</param>
+        /// <returns>Results and compared faces in poco</returns>
         public async Task<Compare> CompareFacesResults(Compare faces, string token)
         {
             HttpResponseMessage response = await client.http(token)
@@ -38,6 +44,13 @@ namespace AwsImgRekCSharp.Services
             faces = await response.Content.ReadAsAsync<Compare>();
             return faces;
         }
+        /// <summary>
+        /// Sends a http post request to a java service and processes 
+        /// the uploaded file only if JWT token is valid
+        /// </summary>
+        /// <param name="fileName">Name of the file.</param>
+        /// <param name="token">The token.</param>
+        /// <returns>The image uploaded and success details in poco</returns>
         public async Task<Upload> ProcessUpload(string fileName, string token)
         {
             MultipartFormDataContent form = fileUtil.getFormData(fileName);
@@ -48,11 +61,21 @@ namespace AwsImgRekCSharp.Services
             return process;
         }
 
+        /// <summary>Validates token.</summary>
+        /// <param name="token">The token.</param>
+        /// <returns>flag depending on if token is valid or not</returns>
         public bool TokenAuthenticated(string token)
         {
             return jwtUtil.validateToken(token);
         }
 
+        /// <summary>
+        /// Provides a token from the C# application and sends a 
+        /// http post request to a java service to request a token from the 
+        /// Java application.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns>C# and Java JWT tokens in poco</returns>
         public async Task<User> Authenticate(User user)
         {
             HttpResponseMessage response = await client.http(null)
@@ -62,10 +85,16 @@ namespace AwsImgRekCSharp.Services
             return session;
         }
 
+        /// <summary>
+        /// Sends a http post request to a java service of logs from the 
+        /// front end only if JWT token is valid
+        /// </summary>
+        /// <param name="logging">The logs.</param>
+        /// <returns>Success message in poco</returns>
         public async Task<Logging> LogFrontEndToFile(Logging logging)
         {
             HttpResponseMessage response = await client.http(null)
-                .PostAsJsonAsync("http://ec2-3-17-26-55.us-east-2.compute.amazonaws.com:9000/api/v1/logging", logging);
+                .PostAsJsonAsync(settings.logUrl, logging);
             Logging results = await response.Content.ReadAsAsync<Logging>();
             return results;
         }

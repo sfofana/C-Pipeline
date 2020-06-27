@@ -1,0 +1,1 @@
+C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\.sonarqube\out\1

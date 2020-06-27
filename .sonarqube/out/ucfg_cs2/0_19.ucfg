@@ -1,0 +1,36 @@
+
+7AwsImgRekCSharp.Utilities.JwtUtil.validateToken(string)h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs/ /($"0*¾
+
+0ˆ
+…
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs2 2(=
+%07System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"3AwsImgRekCSharp.Utilities.JwtUtil.getTokenHandler()*%#
+!AwsImgRekCSharp.Utilities.JwtUtil‡
+„
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs3& 3(5>
+%18Microsoft.IdentityModel.Tokens.TokenValidationParameters"1AwsImgRekCSharp.Utilities.JwtUtil.getParameters()*%#
+!AwsImgRekCSharp.Utilities.JwtUtil¯¬
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs2 3(F,
+%2&System.Security.Claims.ClaimsPrincipal"¹System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(string, Microsoft.IdentityModel.Tokens.TokenValidationParameters, out Microsoft.IdentityModel.Tokens.SecurityToken)*?
+=
+%07System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler*
+
+tokenstring*@
+>
+%18Microsoft.IdentityModel.Tokens.TokenValidationParameters*<
+:
+
+validToken,Microsoft.IdentityModel.Tokens.SecurityToken2ValidateToken(string, Microsoft.IdentityModel.Tokens.TokenValidationParameters, out Microsoft.IdentityModel.Tokens.SecurityToken)"r
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs4 4(
+""*„
+1"
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs5 5(	
+implicit return:
+tokenstringB%#
+!AwsImgRekCSharp.Utilities.JwtUtil

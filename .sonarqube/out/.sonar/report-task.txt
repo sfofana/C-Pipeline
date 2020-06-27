@@ -1,0 +1,7 @@
+organization=sfofana
+projectKey=ImgRekApp-CSharp
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.9086
+dashboardUrl=https://sonarcloud.io/dashboard?id=ImgRekApp-CSharp
+ceTaskId=AXL2gdUYGtPNhMXSbwyt
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXL2gdUYGtPNhMXSbwyt

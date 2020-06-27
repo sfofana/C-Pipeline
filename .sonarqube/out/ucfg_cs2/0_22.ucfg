@@ -1,0 +1,23 @@
+
+3AwsImgRekCSharp.Utilities.JwtUtil.getTokenHandler()h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs7( 7(7"0*©
+0Â‚
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs9 9(0=
+%07System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"7System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandlerç
+ä
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs9 9(.
+
+%1void"QSystem.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.JwtSecurityTokenHandler()*?
+=
+%07System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"´
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs9 9(1?
+=
+%07System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler*Ñ
+1"
+h
+^C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\JwtUtil.cs: :(	
+implicit returnB%#
+!AwsImgRekCSharp.Utilities.JwtUtil

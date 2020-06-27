@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsImgRekCSharp", "AwsImgRekCSharp\AwsImgRekCSharp.csproj", "{8FF18ADA-3EBD-457E-A28F-87F3B39220D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsImgRekCSharp", "AwsImgRekCSharp\AwsImgRekCSharp.csproj", "{8FF18ADA-3EBD-457E-A28F-87F3B39220D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsImgRekCSharp.Tests", "AwsImgRekCSharp.Tests\AwsImgRekCSharp.Tests.csproj", "{3086216F-C48E-4325-A9F0-BB2141E7C784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8FF18ADA-3EBD-457E-A28F-87F3B39220D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FF18ADA-3EBD-457E-A28F-87F3B39220D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FF18ADA-3EBD-457E-A28F-87F3B39220D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3086216F-C48E-4325-A9F0-BB2141E7C784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3086216F-C48E-4325-A9F0-BB2141E7C784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3086216F-C48E-4325-A9F0-BB2141E7C784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3086216F-C48E-4325-A9F0-BB2141E7C784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

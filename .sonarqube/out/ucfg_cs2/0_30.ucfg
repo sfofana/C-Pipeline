@@ -1,0 +1,73 @@
+
+VAwsImgRekCSharp.Services.UserService.LogFrontEndToFile(AwsImgRekCSharp.Models.Logging)k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs^# ^(4"0*‚
+0ñ
+ì
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs`1 `(76
+%00AwsImgRekCSharp.Configurations.HttpClientBuilder"__id*f*d&
+$AwsImgRekCSharp.Services.UserService":
+client0AwsImgRekCSharp.Configurations.HttpClientBuilderì
+ê
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs`1 `(B 
+%1System.Net.Http.HttpClient"=AwsImgRekCSharp.Configurations.HttpClientBuilder.http(string)*8
+6
+%00AwsImgRekCSharp.Configurations.HttpClientBuilder*
+""Ü
+É
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csa! a()-
+%2'AwsImgRekCSharp.Configurations.Settings"__id*_*]&
+$AwsImgRekCSharp.Services.UserService"3
+settings'AwsImgRekCSharp.Configurations.Settings„
+‡
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csa! a(0
+%3string"2AwsImgRekCSharp.Configurations.Settings.logUrl.get*/
+-
+%2'AwsImgRekCSharp.Configurations.Settingsá
+Ñ
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs`1 a(:*
+%4$System.Threading.Tasks.Task<TResult>"^System.Net.Http.HttpClientExtensions.PostAsJsonAsync<T>(System.Net.Http.HttpClient, string, T)*("&
+$System.Net.Http.HttpClientExtensions*"
+ 
+%1System.Net.Http.HttpClient*
+
+%3string*+
+)
+loggingAwsImgRekCSharp.Models.LoggingØ
+¨
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.cs`  a(:/
+response#System.Net.Http.HttpResponseMessage"__id*
+""˜
+Ù
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csb$ b(4!
+%5System.Net.Http.HttpContent"/System.Net.Http.HttpResponseMessage.Content.get*1
+/
+response#System.Net.Http.HttpResponseMessageø
+º
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csb$ b(K*
+%6$System.Threading.Tasks.Task<TResult>"QSystem.Net.Http.HttpContentExtensions.ReadAsAsync<T>(System.Net.Http.HttpContent)*)"'
+%System.Net.Http.HttpContentExtensions*#
+!
+%5System.Net.Http.HttpContent©
+¶
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csb b(K)
+resultsAwsImgRekCSharp.Models.Logging"__id*
+"""ö
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csc c(+
+)
+resultsAwsImgRekCSharp.Models.Logging*à
+1"Ç
+k
+aC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Services\UserService.csd d(	
+implicit return:)
+loggingAwsImgRekCSharp.Models.LoggingB(&
+$AwsImgRekCSharp.Services.UserService

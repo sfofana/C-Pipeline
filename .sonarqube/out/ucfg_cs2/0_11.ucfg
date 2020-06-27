@@ -1,0 +1,59 @@
+
+[AwsImgRekCSharp.Controllers.AuthenticationController.GetAccess(AwsImgRekCSharp.Models.User){
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs  ()"2*Å
+0ü
+ú
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs ( *
+%0$AwsImgRekCSharp.Services.UserService"__id*k*i6
+4AwsImgRekCSharp.Controllers.AuthenticationController"/
+service$AwsImgRekCSharp.Services.UserService—
+Œ
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs (3*
+%1$System.Threading.Tasks.Task<TResult>"NAwsImgRekCSharp.Services.UserService.Authenticate(AwsImgRekCSharp.Models.User)*,
+*
+%0$AwsImgRekCSharp.Services.UserService*%
+#
+userAwsImgRekCSharp.Models.User"Ö
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs (4
+""*ò
+1"í
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs (	
+implicit return*í
+2ª
+∏
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs  ()
+%2"__entrypoint*%
+#
+userAwsImgRekCSharp.Models.User˝
+˙
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs+ (3
+%3"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*%
+#
+userAwsImgRekCSharp.Models.UserÉ
+Ä
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs	 (!
+%4"
+__annotate*HF
+DMicrosoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute(string)*%
+#
+userAwsImgRekCSharp.Models.User√
+¿
+{
+qC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Controllers\AuthenticationController.cs* (>#
+userAwsImgRekCSharp.Models.User"__annotation*
+
+%3*
+
+%4*
+0:#
+userAwsImgRekCSharp.Models.UserB86
+4AwsImgRekCSharp.Controllers.AuthenticationController

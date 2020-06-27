@@ -1,0 +1,199 @@
+
+6AwsImgRekCSharp.Utilities.FileUtil.getFormData(string)i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs#( #(3"0*µ6
+0‚
+ÿ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs%' %(/-
+%0'AwsImgRekCSharp.Configurations.Settings"__id*]*[$
+"AwsImgRekCSharp.Utilities.FileUtil"3
+settings'AwsImgRekCSharp.Configurations.Settingsà
+Ý
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs%' %(9
+%1string"1AwsImgRekCSharp.Configurations.Settings.getPath()*/
+-
+%0'AwsImgRekCSharp.Configurations.Settings‚
+ÿ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs%F %(N-
+%2'AwsImgRekCSharp.Configurations.Settings"__id*]*[$
+"AwsImgRekCSharp.Utilities.FileUtil"3
+settings'AwsImgRekCSharp.Configurations.Settingsä
+á
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs%F %(X
+%3string"5AwsImgRekCSharp.Configurations.Settings.extention.get*/
+-
+%2'AwsImgRekCSharp.Configurations.Settings¬
+©
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs%; %(X
+%4string"__concat*
+
+fileNamestring*
+
+%3stringØ
+Õ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs% %(Y
+%5string"&System.IO.Path.Combine(string, string)*"
+System.IO.Path*
+
+%1string*
+
+%4string”
+‘
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs% %(Y
+filestring"__id*
+
+%5stringÇ
+Ä
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs& &(1
+%6byte[]"#System.IO.File.ReadAllBytes(string)*"
+System.IO.File*
+
+filestring”
+‘
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs& &(1
+databyte[]"__id*
+
+%6byte[]ÈÅ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs(, ((J.
+%7(System.Net.Http.MultipartFormDataContent"(System.Net.Http.MultipartFormDataContentñ
+î
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs(0 ((H
+
+%8void"CSystem.Net.Http.MultipartFormDataContent.MultipartFormDataContent()*0
+.
+%7(System.Net.Http.MultipartFormDataContentØ
+Õ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs(% ((J0
+form(System.Net.Http.MultipartFormDataContent"__id*0
+.
+%7(System.Net.Http.MultipartFormDataContent¸µ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs)" )(<&
+%9 System.Net.Http.ByteArrayContent" System.Net.Http.ByteArrayContentò
+ï
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs)& )(6
+%10void"9System.Net.Http.ByteArrayContent.ByteArrayContent(byte[])*(
+&
+%9 System.Net.Http.ByteArrayContent*
+
+databyte[]Æ
+Ã
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs) )(<&
+contentSystem.Net.Http.HttpContent"__id*(
+&
+%9 System.Net.Http.ByteArrayContentô
+ñ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs* *(1
+%11*System.Net.Http.Headers.HttpContentHeaders"'System.Net.Http.HttpContent.Headers.get*(
+&
+contentSystem.Net.Http.HttpContentƒ
+€
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs*S *([.
+%12'AwsImgRekCSharp.Configurations.Settings"__id*]*[$
+"AwsImgRekCSharp.Utilities.FileUtil"3
+settings'AwsImgRekCSharp.Configurations.Settingsæ
+ã
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs*S *(e
+%13string"5AwsImgRekCSharp.Configurations.Settings.formvalue.get*0
+.
+%12'AwsImgRekCSharp.Configurations.Settingsãà
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs*1 .(<
+%145System.Net.Http.Headers.ContentDispositionHeaderValue"5System.Net.Http.Headers.ContentDispositionHeaderValue©
+¦
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs*5 *(R
+%15void"[System.Net.Http.Headers.ContentDispositionHeaderValue.ContentDispositionHeaderValue(string)*>
+<
+%145System.Net.Http.Headers.ContentDispositionHeaderValue*
+
+%13stringƒ
+€
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs, ,(.
+%16'AwsImgRekCSharp.Configurations.Settings"__id*]*[$
+"AwsImgRekCSharp.Utilities.FileUtil"3
+settings'AwsImgRekCSharp.Configurations.Settingså
+â
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs, ,((
+%17string"4AwsImgRekCSharp.Configurations.Settings.formtype.get*0
+.
+%16'AwsImgRekCSharp.Configurations.SettingsŒ
+‰
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs, ,((
+%18void">System.Net.Http.Headers.ContentDispositionHeaderValue.Name.set*>
+<
+%145System.Net.Http.Headers.ContentDispositionHeaderValue*
+
+%17stringƒ
+€
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs-& -(..
+%19'AwsImgRekCSharp.Configurations.Settings"__id*]*[$
+"AwsImgRekCSharp.Utilities.FileUtil"3
+settings'AwsImgRekCSharp.Configurations.Settingsæ
+ã
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs-& -(8
+%20string"5AwsImgRekCSharp.Configurations.Settings.extention.get*0
+.
+%19'AwsImgRekCSharp.Configurations.Settings®
+«
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs- -(8
+%21string"__concat*
+
+fileNamestring*
+
+%20string
+
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs- -(8
+%22void"BSystem.Net.Http.Headers.ContentDispositionHeaderValue.FileName.set*>
+<
+%145System.Net.Http.Headers.ContentDispositionHeaderValue*
+
+%21string³
+°
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs* .(
+%23void"ASystem.Net.Http.Headers.HttpContentHeaders.ContentDisposition.set*3
+1
+%11*System.Net.Http.Headers.HttpContentHeaders*>
+<
+%145System.Net.Http.Headers.ContentDispositionHeaderValueÆÃ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs/ /(
+%24void"ISystem.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent)*2
+0
+form(System.Net.Http.MultipartFormDataContent*(
+&
+contentSystem.Net.Http.HttpContent2 Add(System.Net.Http.HttpContent)"Ÿ
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs0 0(2
+0
+form(System.Net.Http.MultipartFormDataContent*†
+1"€
+i
+_C:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Utilities\FileUtil.cs1 1(	
+implicit return:
+fileNamestringB&$
+"AwsImgRekCSharp.Utilities.FileUtil

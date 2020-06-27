@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Security.Cryptography;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace AwsImgRekCSharp.Utilities
 {
+    /// <summary>Vault Utility</summary>
     public class VaultUtil
     {
-        private string key = "/home/ec2-user/secret/key";
-        private string encryption = "/home/ec2-user/secret/vault";
+        private readonly string key = "/home/ec2-user/secret/key";
+        private readonly string encryption = "/home/ec2-user/secret/vault";
         /// <summary>Decrypts this instance.</summary>
         /// <typeparam name="T">Any object type typically Settings od Credentials</typeparam>
         /// <returns>Decrypted JSON to string deserialized to poco</returns>

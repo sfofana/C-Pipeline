@@ -1,0 +1,143 @@
+
+=AwsImgRekCSharp.Configurations.HttpClientBuilder.http(string)w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs ("0*ö'
+0∫∑
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs  (0 
+%0System.Net.Http.HttpClient"System.Net.Http.HttpClient’
+“
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs$ (.
+
+%1void"'System.Net.Http.HttpClient.HttpClient()*"
+ 
+%0System.Net.Http.HttpClientÃ
+…
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs (0$
+clientSystem.Net.Http.HttpClient"__id*"
+ 
+%0System.Net.Http.HttpClient—
+Œ
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs (!
+%2System.Text.Encoding"System.Text.Encoding.UTF8.get*"
+System.Text.Encodingû
+õ
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs. (6-
+%3'AwsImgRekCSharp.Configurations.Settings"__id*k*i2
+0AwsImgRekCSharp.Configurations.HttpClientBuilder"3
+settings'AwsImgRekCSharp.Configurations.SettingsÒ
+Ó
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs. (?
+%4string"4AwsImgRekCSharp.Configurations.Settings.username.get*/
+-
+%3'AwsImgRekCSharp.Configurations.Settingsû
+õ
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.csB (J-
+%5'AwsImgRekCSharp.Configurations.Settings"__id*k*i2
+0AwsImgRekCSharp.Configurations.HttpClientBuilder"3
+settings'AwsImgRekCSharp.Configurations.SettingsÒ
+Ó
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.csB (S
+%6string"4AwsImgRekCSharp.Configurations.Settings.password.get*/
+-
+%5'AwsImgRekCSharp.Configurations.Settings¨
+©
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs+ (U
+%7string"__concat*
+
+%4string*
+""¥
+±
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs+ (U
+%8string"__concat*
+
+%7string*
+
+%6stringÒÓ
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs (V
+%9byte[]"%System.Text.Encoding.GetBytes(string)*
+
+%2System.Text.Encoding*
+
+%8string2GetBytes(string)÷
+”
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs7 (
+%10string"%System.Convert.ToBase64String(byte[])*"
+System.Convert*
+
+%9byte[]ÈÊ
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs (8
+%111System.Net.Http.Headers.AuthenticationHeaderValue"1System.Net.Http.Headers.AuthenticationHeaderValueæ
+ª
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs (-
+%12void"[System.Net.Http.Headers.AuthenticationHeaderValue.AuthenticationHeaderValue(string, string)*:
+8
+%111System.Net.Http.Headers.AuthenticationHeaderValue*	
+Basic*
+
+%10string˛
+˚
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs& (>
+	authValue1System.Net.Http.Headers.AuthenticationHeaderValue"__id*:
+8
+%111System.Net.Http.Headers.AuthenticationHeaderValueç
+ä
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs ((1
+%13*System.Net.Http.Headers.HttpRequestHeaders"4System.Net.Http.HttpClient.DefaultRequestHeaders.get*&
+$
+clientSystem.Net.Http.HttpClientæ
+ª
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs (B
+%14void"<System.Net.Http.Headers.HttpRequestHeaders.Authorization.set*3
+1
+%13*System.Net.Http.Headers.HttpRequestHeaders*@
+>
+	authValue1System.Net.Http.Headers.AuthenticationHeaderValueç
+ä
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs   ((1
+%15*System.Net.Http.Headers.HttpRequestHeaders"4System.Net.Http.HttpClient.DefaultRequestHeaders.get*&
+$
+clientSystem.Net.Http.HttpClientµ
+≤
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs 7  (H
+%16string"__concat*	
+Bearer *
+
+tokenstringî
+ë
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs   (I
+%17void"7System.Net.Http.Headers.HttpHeaders.Add(string, string)*3
+1
+%15*System.Net.Http.Headers.HttpRequestHeaders*
+
+jToken*
+
+%16string"°
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs! !(&
+$
+clientSystem.Net.Http.HttpClient*î
+1"é
+w
+mC:\Users\sufya\Documents\Repository\PipeLineC#\C-Pipeline\AwsImgRekCSharp\Configurations\HttpClientBuilder.cs" "(	
+implicit return:
+tokenstringB42
+0AwsImgRekCSharp.Configurations.HttpClientBuilder
